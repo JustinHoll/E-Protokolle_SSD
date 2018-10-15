@@ -52,6 +52,9 @@ a, a:hover, a:focus {
     display: flex;
     align-items: stretch;
 }
+#logo{
+    width: 100%;
+}
 
 #sidebar {
     min-width: 250px;
