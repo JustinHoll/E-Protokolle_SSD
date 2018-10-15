@@ -56,8 +56,8 @@ a, a:hover, a:focus {
 #sidebar {
     min-width: 250px;
     max-width: 250px;
-    background: #7386D5;
-    color: #fff;
+    background: rgba(230,230,230,1);
+    color: rgba(0,0,0,1);
     transition: all 0.3s;
 }
 
@@ -66,18 +66,13 @@ a, a:hover, a:focus {
 }
 
 #sidebar .sidebar-header {
-    padding: 20px;
-    background: #6d7fcc;
+    padding: 8px;
+    background: rgba(255,255,255,1);
 }
 
 #sidebar ul.components {
     padding: 20px 0;
     border-bottom: 1px solid #47748b;
-}
-
-#sidebar ul p {
-    color: #fff;
-    padding: 10px;
 }
 
 #sidebar ul li a {
@@ -86,7 +81,7 @@ a, a:hover, a:focus {
     display: block;
 }
 #sidebar ul li a:hover {
-    color: #7386D5;
+    color: rgba(0,0,0,1);
     background: #fff;
 }
 
