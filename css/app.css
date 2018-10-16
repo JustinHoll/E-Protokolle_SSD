@@ -1,9 +1,4 @@
-/*
-    DEMO STYLE
-*/
-@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
-
-
+/* Allgemein */
 body {
     font-family: 'Calibri', sans-serif;
     background: #fafafa;
@@ -22,7 +17,7 @@ a, a:hover, a:focus {
     text-decoration: none;
     transition: all 0.3s;
 }
-
+/* Info-Leiste oben */
 .navbar {
     padding: 15px 10px;
     background: #fff;
@@ -47,9 +42,7 @@ a, a:hover, a:focus {
     margin: 40px 0;
 }
 
-/* ---------------------------------------------------
-    SIDEBAR STYLE
------------------------------------------------------ */
+/* seitliche Navigationsleiste */
 .wrapper {
     display: flex;
     align-items: stretch;
@@ -102,7 +95,17 @@ a, a:hover, a:focus {
     color: #fff;
     background: #6d7fcc;
 }
-
+@media (max-width: 768px) {
+    #sidebar {
+        margin-left: -250px;
+    }
+    #sidebar.active {
+        margin-left: 0;
+    }
+    #sidebarCollapse span {
+        display: none;
+    }
+}
 
 a[data-toggle="collapse"] {
     position: relative;
@@ -151,26 +154,9 @@ a.article, a.article:hover {
 
 
 
-/* ---------------------------------------------------
-    CONTENT STYLE
------------------------------------------------------ */
+/* Allgemeiner Inhalt */
 #content {
     padding: 20px;
     min-height: 100vh;
     transition: all 0.3s;
-}
-
-/* ---------------------------------------------------
-    MEDIAQUERIES
------------------------------------------------------ */
-@media (max-width: 768px) {
-    #sidebar {
-        margin-left: -250px;
-    }
-    #sidebar.active {
-        margin-left: 0;
-    }
-    #sidebarCollapse span {
-        display: none;
-    }
 }
