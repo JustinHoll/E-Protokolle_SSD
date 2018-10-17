@@ -190,11 +190,23 @@ a.article, a.article:hover {
     width:100%;
 }
 
+#einsatzinformationenDiv {
+    margin: 25px;
+}
+
+#massnahmenDiv {
+    margin: 25px;
+}
+
 #sofMas {
-    margin-top: 25px;
+    margin-top: 50px;
 }
 
 #patientendatenDiv{
+    margin: 25px;
+}
+
+#notizenDiv{
     margin: 25px;
 }
 
