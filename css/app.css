@@ -17,7 +17,7 @@ a, a:hover, a:focus {
     text-decoration: none;
     transition: all 0.3s;
 }
-/* Info-Leiste oben */
+/* Info-Leiste oben   */
 .navbar {
     background: #fff;
     border: none;
@@ -55,6 +55,7 @@ a, a:hover, a:focus {
 
 #sidebar h3{
     text-align: center;
+    padding-bottom: 20px;
 }
 
 #sidebar {
@@ -75,7 +76,7 @@ a, a:hover, a:focus {
 }
 
 #sidebar ul.components {
-    padding: 20px 0;
+    padding: 0px 0;
 }
 #sidebar ul li a {
     padding: 10px;
