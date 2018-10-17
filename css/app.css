@@ -1,16 +1,11 @@
-/*
-    DEMO STYLE
-*/
-@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
-
-
+/* Allgemein */
 body {
     font-family: 'Calibri', sans-serif;
     background: #fafafa;
 }
 
 p {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Calabri', sans-serif;
     font-size: 1.1em;
     font-weight: 300;
     line-height: 1.7em;
@@ -22,7 +17,7 @@ a, a:hover, a:focus {
     text-decoration: none;
     transition: all 0.3s;
 }
-
+/* Info-Leiste oben */
 .navbar {
     padding: 15px 10px;
     background: #fff;
@@ -47,9 +42,7 @@ a, a:hover, a:focus {
     margin: 40px 0;
 }
 
-/* ---------------------------------------------------
-    SIDEBAR STYLE
------------------------------------------------------ */
+/* seitliche Navigationsleiste */
 .wrapper {
     display: flex;
     align-items: stretch;
@@ -85,12 +78,11 @@ a, a:hover, a:focus {
 
 #sidebar ul.components {
     padding: 20px 0;
-    border-bottom: 1px solid #47748b;
 }
-
 #sidebar ul li a {
     padding: 10px;
-    font-size: 1.1em;
+    padding-left: 20px;
+    font-size: 1.5em;
     display: block;
 }
 #sidebar ul li a:hover {
@@ -107,6 +99,17 @@ a, a:hover, a:focus {
     background-color: green;
 }
 
+@media (max-width: 768px) {
+    #sidebar {
+        margin-left: -250px;
+    }
+    #sidebar.active {
+        margin-left: 0;
+    }
+    #sidebarCollapse span {
+        display: none;
+    }
+}
 
 a[data-toggle="collapse"] {
     position: relative;
@@ -155,26 +158,9 @@ a.article, a.article:hover {
 
 
 
-/* ---------------------------------------------------
-    CONTENT STYLE
------------------------------------------------------ */
+/* Allgemeiner Inhalt */
 #content {
     padding: 20px;
     min-height: 100vh;
     transition: all 0.3s;
-}
-
-/* ---------------------------------------------------
-    MEDIAQUERIES
------------------------------------------------------ */
-@media (max-width: 768px) {
-    #sidebar {
-        margin-left: -250px;
-    }
-    #sidebar.active {
-        margin-left: 0;
-    }
-    #sidebarCollapse span {
-        display: none;
-    }
 }
