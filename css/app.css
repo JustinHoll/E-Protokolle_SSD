@@ -41,6 +41,13 @@ a, a:hover, a:focus {
     border-bottom: 1px dashed #ddd;
     margin: 40px 0;
 }
+#roterBalkenUnten{
+    position:fixed;
+    width:100%;
+    height:17px;
+    bottom:0;
+    background-color: rgba(205,9,33,1)
+}
 
 /* seitliche Navigationsleiste */
 .wrapper {
@@ -100,6 +107,10 @@ a, a:hover, a:focus {
     color: white;
 }
 
+#sidebarCollapse {
+    display: none;
+}
+
 @media (max-width: 768px) {
     #sidebar {
         margin-left: -250px;
@@ -107,10 +118,21 @@ a, a:hover, a:focus {
     #sidebar.active {
         margin-left: 0;
     }
-    #sidebarCollapse span {
-        display: none;
+
+    .collapse{
+        display: block;
     }
+    #sidebarCollapse {
+        display: block;
+    }
+    #sidebarCollapse span{
+        display: block;
+    }
+
 }
+
+
+
 
 a[data-toggle="collapse"] {
     position: relative;
