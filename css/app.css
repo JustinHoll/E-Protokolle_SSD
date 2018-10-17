@@ -214,7 +214,10 @@ a.article, a.article:hover {
 #verbleibDiv{
     margin:25px;
 }
-
+#erg{
+    margin-top:10px;
+    margin-bottom: 10px;
+}
 #notizenDiv{
     margin: 25px;
 }
