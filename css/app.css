@@ -103,6 +103,10 @@ a, a:hover, a:focus {
     background: #6d7fcc;
 }
 
+#btnAbschließen {
+    background-color: green;
+}
+
 
 a[data-toggle="collapse"] {
     position: relative;
