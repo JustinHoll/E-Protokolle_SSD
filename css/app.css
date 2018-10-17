@@ -3,7 +3,7 @@ body {
     font-family: 'Calibri', sans-serif;
     background: #fafafa;
     background-color: #ffff;
-    width:100vw;
+    width: 100vw;
 }
 
 p {
@@ -19,9 +19,11 @@ a, a:hover, a:focus {
     text-decoration: none;
     transition: all 0.3s;
 }
-.hidden{
-    display:none;
+
+.hidden {
+    display: none;
 }
+
 /* Info-Leiste oben   */
 .navbar {
     background: #fff;
@@ -34,8 +36,8 @@ a, a:hover, a:focus {
     box-shadow: none;
     outline: none !important;
     border: 2px solid grey;
-    color: rgba(0,0,0,1);
-    background-color: rgba(255,255,255,1);
+    color: rgba(0, 0, 0, 1);
+    background-color: rgba(255, 255, 255, 1);
 }
 
 .line {
@@ -44,12 +46,13 @@ a, a:hover, a:focus {
     border-bottom: 1px dashed #ddd;
     margin: 40px 0;
 }
-#roterBalkenUnten{
-    position:fixed;
-    width:100%;
-    height:14px;
-    bottom:0;
-    background-color: rgba(205,9,33,1)
+
+#roterBalkenUnten {
+    position: fixed;
+    width: 100%;
+    height: 14px;
+    bottom: 0;
+    background-color: rgba(205, 9, 33, 1)
 }
 
 /* seitliche Navigationsleiste */
@@ -57,7 +60,8 @@ a, a:hover, a:focus {
     display: flex;
     align-items: stretch;
 }
-#logo{
+
+#logo {
     margin-top: 5%;
     margin-bottom: : 10%;
     margin-right: 15%;
@@ -65,7 +69,7 @@ a, a:hover, a:focus {
     width: 70%;
 }
 
-#sidebar h3{
+#sidebar h3 {
     text-align: center;
     padding-bottom: 10px;
 }
@@ -73,10 +77,10 @@ a, a:hover, a:focus {
 #sidebar {
     min-width: 250px;
     max-width: 250px;
-    background: rgba(230,230,230,1);
-    color: rgba(0,0,0,1);
+    background: rgba(230, 230, 230, 1);
+    color: rgba(0, 0, 0, 1);
     transition: all 0.3s;
-    border-right: 2px solid rgba(153,153,153,1);
+    border-right: 2px solid rgba(153, 153, 153, 1);
 }
 
 #sidebar.active {
@@ -85,24 +89,26 @@ a, a:hover, a:focus {
 
 #sidebar .sidebar-header {
     padding: 8px;
-    background: rgba(255,255,255,1);
+    background: rgba(255, 255, 255, 1);
 }
 
 #sidebar ul.components {
     padding: 0px 0;
 }
+
 #sidebar ul li a {
     padding: 10px;
     padding-left: 20px;
     font-size: 1.5em;
     display: block;
 }
+
 #sidebar ul li a:hover {
-    color: rgba(0,0,0,1);
+    color: rgba(0, 0, 0, 1);
     background: #fff;
 }
 
-#sidebar ul li.active > a, a[aria-expanded="true"] {
+#sidebar ul li.active>a, a[aria-expanded="true"] {
     color: #fff;
     background: #6d7fcc;
 }
@@ -115,31 +121,32 @@ a, a:hover, a:focus {
 #sidebarCollapse {
     display: none;
 }
-.aktiverBtn{
-    background-color:grey;
+
+.aktiverBtn {
+    background-color: rgba(204, 204, 204, 1);
 }
+
 @media (max-width: 768px) {
     #sidebar {
         margin-left: -250px;
     }
+
     #sidebar.active {
         margin-left: 0;
     }
 
-    .collapse{
+    .collapse {
         display: block;
     }
+
     #sidebarCollapse {
         display: block;
     }
-    #sidebarCollapse span{
+
+    #sidebarCollapse span {
         display: block;
     }
-
 }
-
-
-
 
 a[data-toggle="collapse"] {
     position: relative;
@@ -153,10 +160,10 @@ a[aria-expanded="false"]::before, a[aria-expanded="true"]::before {
     font-family: 'Glyphicons Halflings';
     font-size: 0.6em;
 }
+
 a[aria-expanded="true"]::before {
     content: '\e260';
 }
-
 
 ul ul a {
     font-size: 0.9em !important;
@@ -186,45 +193,28 @@ a.article, a.article:hover {
     color: #fff !important;
 }
 
-
-
 /* Allgemeiner Inhalt */
 #content {
     min-height: 100vh;
     transition: all 0.3s;
-    width:100%;
+    width: 100%;
 }
 
-#einsatzinformationenDiv {
+.reiter {
     margin: 25px;
 }
-#patientendatenDiv{
-    margin: 25px;
-}
-#massnahmenDiv {
-    margin: 25px;
-}
+
 #sofMas {
     margin-top: 50px;
 }
-#vitalparameterDiv{
-    margin: 25px;
-}
-#anamneseDiv{
-    margin: 25px;
-}
-#text{
+
+#text {
     margin-top: 10px;
 }
-#verbleibDiv{
-    margin:25px;
-}
-#erg{
-    margin-top:10px;
+
+#erg {
+    margin-top: 10px;
     margin-bottom: 10px;
-}
-#notizenDiv{
-    margin: 25px;
 }
 
 main {
@@ -232,4 +222,13 @@ main {
     padding-right: 15px;
     padding-top: 0px;
     padding-bottom: 0px;
+}
+
+.radioAuswahl {
+    text-align: left;
+    color: #494949;
+    font-weight: normal;
+}
+.radioUeber{
+    font-weight:bold;
 }

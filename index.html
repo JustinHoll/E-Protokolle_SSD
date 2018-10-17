@@ -166,6 +166,106 @@
                     <div>
                         <h2>Unfalhergang | Sachlage</h2>
                     </div>
+                    <div class="form-group">
+                        <label for="unfallhergangText">Unfallhergang</label>
+                        <textarea required rows="4" class="form-control" name="unfallhergangText"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="sachlage">Sachlage</label>
+                        <textarea required rows="4" class="form-control" name="sachlage"></textarea>
+                    </div>
+
+                    <h4>Erstbefund</h4>
+                    <div class="row">
+                        <div class="col-md-2">
+
+                            <div class="form-group radioGrp">
+                                <p class="radioUeber">Bewusstseinslage</p>
+                                <p class="radioAuswahl">
+                                    <input type="radio" id="orientiert" name="bewusstseinslage" value="orientiert">
+                                    <label style="font-weight:normal" for="orientiert"> orientiert</label></br>
+                                    <input type="radio" id="getrübt" name="bewusstseinslage" value="getrübt">
+                                    <label style="font-weight:normal" for="getrübt"> getrübt</label></br>
+                                    <input type="radio" id="bewusstlos" name="bewusstseinslage" value="bewusstlos">
+                                    <label style="font-weight:normal" for="bewusstlos"> bewusstlos</label></br></p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-2">
+
+                            <div class="form-group radioGrp">
+                                <p class="radioUeber">Kreislauf</p>
+                                <p class="radioAuswahl">
+                                    <input type="radio" id="schock" name="kreislauf" value="schock">
+                                    <label style="font-weight:normal" for="schock"> Schock</label></br>
+                                    <input type="radio" id="kreislaufstillstand" name="kreislauf" value="kreislaufstillstand">
+                                    <label style="font-weight:normal" for="kreislaufstillstand"> Kreislaufstillstand</label></br>
+                                    <input type="radio" id="pulsRegelmäßig" name="kreislauf" value="pulsRegelmäßig">
+                                    <label style="font-weight:normal" for="pulsRegelmäßig"> Puls regelmäßig</label></br>
+                                    <input type="radio" id="pulsUnregelmäßig" name="kreislauf" value="pulsUnregelmäßig">
+                                    <label style="font-weight:normal" for="pulsUnregelmäßig"> Puls unregelmäßig</label></br></p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-2">
+
+                            <div class="form-group radioGrp">
+                                <p class="radioUeber">Atmung</p>
+                                <p class="radioAuswahl">
+                                    <input type="radio" id="spontanFrei" name="atmung" value="spontanFrei">
+                                    <label style="font-weight:normal" for="spontanFrei"> spontan/frei</label></br>
+                                    <input type="radio" id="atemnot" name="atmung" value="atemnot">
+                                    <label style="font-weight:normal" for="atemnot"> Atemnot</label></br>
+                                    <input type="radio" id="hyperventilation" name="atmung" value="hyperventilation">
+                                    <label style="font-weight:normal" for="hyperventilation"> Hyperventilation</label></br>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-2">
+
+                            <div class="form-group radioGrp">
+                                <p class="radioUeber">Schmerzen</p>
+                                <p class="radioAuswahl">
+                                    <input type="radio" id="keine" name="schmerzen" value="keine">
+                                    <label style="font-weight:normal" for="keine"> keine</label></br>
+                                    <input type="radio" id="geringe" name="schmerzen" value="geringe">
+                                    <label style="font-weight:normal" for="geringe"> geringe</label></br>
+                                    <input type="radio" id="mittelstarke" name="schmerzen" value="mittelstarke">
+                                    <label style="font-weight:normal" for="mittelstarke"> mittelstarke</label></br>
+                                    <input type="radio" id="starke" name="schmerzen" value="starke">
+                                    <label style="font-weight:normal" for="starke"> starke</label></br></p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <p class="radioUeber">Lichtreaktion</p>
+
+                            <div class="form-group">
+                                <p class="radioUeber" style="font-weight:bold">links - rechts</p>
+                                <p class="radioAuswahl">
+                                    <input type="radio" id="eng" name="links" value="eng"> -
+                                    <input type="radio" id="eng" name="rechts" value="eng">
+                                    <label style="font-weight:normal"> eng</label></br>
+                                    <input type="radio" id="mittel" name="links" value="mittel"> -
+                                    <input type="radio" id="mittel" name="rechts" value="mittel">
+                                    <label style="font-weight:normal"> mittel</label></br>
+                                    <input type="radio" id="weit" name="links" value="weit"> -
+                                    <input type="radio" id="weit" name="rechts" value="weit">
+                                    <label style="font-weight:normal"> weit</label></br>
+                                    <input type="radio" id="entrundet" name="links" value="entrundet"> -
+                                    <input type="radio" id="entrundet" name="rechts" value="entrundet">
+                                    <label style="font-weight:normal"> entrundet</label></br>
+                                    <input type="radio" id="lichtreaktion" name="links" value="lichtreaktion"> -
+                                    <input type="radio" id="lichtreaktion" name="rechts" value="lichtreaktion">
+                                    <label style="font-weight:normal"> Lichtreaktion</label></br></p>
+                            </div>
+
+
+
+                        </div>
+                    </div>
                 </div>
                 <div id="massnahmenDiv" class="reiter hidden">
                     <div>
@@ -216,7 +316,74 @@
                     <div>
                         <h2>Vitalparameter</h2>
                     </div>
+                    <div class="row">
+                        <div class="col-md-4">
 
+                            <ul class="list-group" id="RRListe">
+                                <li class="list-group-item list-group-item-success">Blutdruck</li>
+                                <li class="list-group-item">120 / 80 mmHg - 16:20 Uhr</li>
+                                <li class="list-group-item">125 / 75 mmHg - 16:25 Uhr</li>
+                                <li class="list-group-item">110 / 85 mmHg - 16:30 Uhr</li>
+                                <li class="list-group-item">120 / 90 mmHg - 16:35 Uhr</li>
+                            </ul>
+
+                            <div class="row">
+
+                                <div class="col-xs-6">
+                                    <div class="form-group">
+                                        <label for="systRR">RR systolisch:</label>
+                                        <input class="form-control" type="number" name="systRR" id="systRR"></input>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="uhrRR">Uhrzeit:</label>
+                                        <input class="form-control" type="time" name="uhrRR" id="uhrRR"></input>
+                                    </div>
+                                    <button class="btn">hinzufügen</button>
+
+                                </div>
+                                <div class="col-xs-6">
+                                    <div class="form-group">
+                                        <label for="systRR">diastolisch:</label>
+                                        <input class="form-control" type="number" name="diastRR" id="diastRR"></input>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                        <div class="col-md-4">
+
+                            <ul class="list-group" id="HFListe">
+                                <li class="list-group-item list-group-item-success">Puls</li>
+                                <li class="list-group-item">65 / min - 16:20 Uhr</li>
+                                <li class="list-group-item">70 / min - 16:25 Uhr</li>
+                                <li class="list-group-item">60 / min - 16:30 Uhr</li>
+                                <li class="list-group-item">65 / min - 16:35 Uhr</li>
+                            </ul>
+
+                            <div class="row">
+
+                                <div class="col-xs-6">
+                                    <div class="form-group">
+                                        <label for="hf">HF:</label>
+                                        <input class="form-control" type="number" name="hf" id="hf"></input>
+                                    </div>
+
+                                    <button class="btn">hinzufügen</button>
+                                </div>
+                                <div class="col-xs-6">
+                                    <div class="form-group">
+                                        <label for="uhrHF">Uhrzeit:</label>
+                                        <input class="form-control" type="time" name="uhrHF" id="uhrHF"></input>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                    </div>
                 </div>
                 <div id="anamneseDiv" class="reiter hidden">
                     <div>
@@ -254,7 +421,7 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="form-group">
-                                <label id = "erg" for="empf">Empfehlung:</label>
+                                <label id="erg" for="empf">Empfehlung:</label>
                             </div>
                         </div>
                         <!-- RadioButtons einfügen -->
@@ -288,19 +455,19 @@
                         </div>
                     </div>
                 </div>
-        <div id="notizenDiv" class="reiter hidden">
-            <div>
-                <h2>Notizen</h2>
-            </div>
-            <div class="form-group">
-                <label for="comment"></label>
-                <textarea class="form-control" rows="5" id="comment"></textarea>
-            </div>
+                <div id="notizenDiv" class="reiter hidden">
+                    <div>
+                        <h2>Notizen</h2>
+                    </div>
+                    <div class="form-group">
+                        <label for="comment"></label>
+                        <textarea class="form-control" rows="5" id="comment"></textarea>
+                    </div>
+                </div>
+            </main>
+
+
         </div>
-        </main>
-
-
-    </div>
     </div>
     <div id="roterBalkenUnten">
 
