@@ -78,10 +78,8 @@ a, a:hover, a:focus {
 }
 
 #sidebar ul.components {
-    padding: 0px 0;
-    border-bottom: 1px solid #47748b;
+    padding: 20px 0;
 }
-
 #sidebar ul li a {
     padding: 10px;
     padding-left: 20px;
@@ -97,6 +95,12 @@ a, a:hover, a:focus {
     color: #fff;
     background: #6d7fcc;
 }
+
+#btnAbschließen {
+    background-color: green;
+    color: white;
+}
+
 @media (max-width: 768px) {
     #sidebar {
         margin-left: -250px;
