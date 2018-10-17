@@ -97,6 +97,7 @@ a, a:hover, a:focus {
 
 #btnAbschließen {
     background-color: green;
+    color: white;
 }
 
 @media (max-width: 768px) {
