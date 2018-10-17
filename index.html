@@ -211,6 +211,9 @@
                     </div>
                 </div>
                 <div id="vitalparameterDiv">
+                    <div>
+                        <h2>Vitalparameter</h2>
+                    </div>
 
                 </div>
                 <div id="anamneseDiv">
@@ -229,21 +232,73 @@
                     </div>
                 </div>
                 <div id="verbleibDiv">
-
-                </div>
-                <div id="notizenDiv">
                     <div>
-                        <h2>Notizen</h2>
+                        <h2>Verbleib des Patienten</h2>
                     </div>
-                    <div class="form-group">
-                        <label for="comment"></label>
-                        <textarea class="form-control" rows="5" id="comment"></textarea>
+                    <div class="row">
+                        <div class="col-md-2">
+                            <div class="form-group">
+                                <label for="zeit">Uhrzeit:</label>
+                                <input type="time" class="form-control" id="zeit">
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="form-group">
+                                <label for="pers">Übergeben an:</label>
+                                <input type="text" class="form-control" id="pers">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label for="pers">Empfehlung:</label>
+                            </div>
+                        </div>
+                        <!-- RadioButtons einfügen -->
+                        <div class="col-md-12">
+                            <div class="radio">
+                                <label><input type="radio" name="keineEmpf">keine Empfehlung ausgesprochen</label>
+                            </div>
+                            <div class="radio">
+                                <label><input type="radio" name="vllarzt">bei Verschlechterung des persönlichen Zustandes einen Arzt/ein Krankenhaus aufsuchen</label>
+                            </div>
+                            <div class="radio">
+                                <label><input type="radio" name="sofortarzt">unverzüglich einen Arzt/ein Krankenhaus zur weiteren Behandlung aufsuchen</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="pers">Ergebnis:</label>
+                        </div>
+
+                        <div class="col-md-12">
+                            <div class="radio">
+                                <label><input type="radio" name="besser">Zustand verbessert</label>
+                            </div>
+                            <div class="radio">
+                                <label><input type="radio" name="unver">Zustand unverändert</label>
+                            </div>
+                            <div class="radio">
+                                <label><input type="radio" name="schlechter">Zustand verschlechtert</label>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </main>
-
 
         </div>
+        <div id="notizenDiv">
+            <div>
+                <h2>Notizen</h2>
+            </div>
+            <div class="form-group">
+                <label for="comment"></label>
+                <textarea class="form-control" rows="5" id="comment"></textarea>
+            </div>
+        </div>
+        </main>
+
+
+    </div>
     </div>
     <div id="roterBalkenUnten">
 

@@ -211,8 +211,9 @@ a.article, a.article:hover {
 #text{
     margin-top: 10px;
 }
-
-
+#verbleibDiv{
+    margin:25px;
+}
 #notizenDiv{
     margin: 25px;
 }
