@@ -1,149 +1,152 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-        <title>E-Protokoll Schulsanitätsdienst</title>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-        <!-- Latest compiled and minified CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <title>E-Protokoll Schulsanitätsdienst</title>
 
-        <!-- Optional theme -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-        <!-- JQuery -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
-        <!-- Latest compiled and minified JavaScript -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-
-        <!-- Our Custom CSS -->
-        <link rel="stylesheet" href="css/app.css">
-    </head>
-    <body>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="css/app.css">
+</head>
 
-        <div class="wrapper">
-            <!-- Sidebar Holder -->
-            <nav id="sidebar">
-                <div class="sidebar-header">
-                    <img src="img\malteserLogo.png" alt="Malteser" id="logo"/>
-                    <h3>Schulsanitätsdienst</h3>
+<body>
+
+
+
+    <div class="wrapper">
+        <!-- Sidebar Holder -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <img src="img\malteserLogo.png" alt="Malteser" id="logo" />
+                <h3>Schulsanitätsdienst</h3>
+            </div>
+
+            <ul class="list-unstyled components">
+                <li>
+                    <a href="#">Einsatzinformationen</a>
+                    <a href="#">Patientendaten</a>
+                    <a href="#">Unfallhergang | Sachlage</a>
+                    <a href="#">Maßnahmen</a>
+                    <a href="#">Vitalparameter</a>
+                    <a href="#">Anamnese</a>
+                    <a href="#">Verbleib</a>
+                    <a href="#">Notizen</a>
+                    <a id="btnAbschließen" href="#">Einsatz abschließen</a>
+                </li>
+            </ul>
+
+
+        </nav>
+
+        <!-- Page Content Holder -->
+        <div id="content">
+
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+
+                    <div class="navbar-header">
+
+                    </div>
+
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <h1>Max Mustermann</h1>
+                        <h4>Schulsanitätsdienst XXX-Schule</h4>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li>
+                                <button type="button" id="sidebarCollapse" class="btn navbar-btn">
+                                    <i class="glyphicon glyphicon-menu-hamburger"></i>
+                                    <span></span>
+                                </button>
+                            </li>
+                        </ul>
+
+
+                    </div>
                 </div>
-
-                <ul class="list-unstyled components">
-                    <li>
-                        <a href="#">Einsatzinformationen</a>
-                        <a href="#">Patientendaten</a>
-                        <a href="#">Unfallhergang | Sachlage</a>
-                        <a href="#">Maßnahmen</a>
-                        <a href="#">Vitalparameter</a>
-                        <a href="#">Anamnese</a>
-                        <a href="#">Verbleib</a>
-                        <a href="#">Notizen</a>
-                        <a id="btnAbschließen" href="#">Einsatz abschließen</a>
-                    </li>
-                </ul>
-
-
             </nav>
 
-            <!-- Page Content Holder -->
-            <div id="content">
+            <main>
+                <div id="einsatzinformationen">
 
-                <nav class="navbar navbar-default">
-                    <div class="container-fluid">
-
-                        <div class="navbar-header">
-
-                        </div>
-
-                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                                    <h1>Max Mustermann</h1>
-                                    <h4>Schulsanitätsdienst XXX-Schule</h4>
-                                    <ul class="nav navbar-nav navbar-right">
-                                        <li>
-                                            <button type="button" id="sidebarCollapse" class="btn navbar-btn">
-                                                <i class="glyphicon glyphicon-menu-hamburger"></i>
-                                                <span></span>
-                                            </button>
-                                        </li>
-                                    </ul>
-
-
-                        </div>
+                </div>
+                <div id="patientendaten">
+                    <div class="form-group">
+                        <label for="usr">Vorname:</label>
+                        <input type="text" class="form-control" id="usr">
                     </div>
-                </nav>
-
-                <main>
-                    <div id="einsatzinformationen">
-
+                    <div class="form-group">
+                        <label for="pwd">Nachname:</label>
+                        <input type="text" class="form-control" id="pwd">
                     </div>
-                    <div id="patientendaten">
-                        <div class="form-group">
-                            <label for="usr">Vorname:</label>
-                            <input type="text" class="form-control" id="usr">
-                        </div>
-                        <div class="form-group">
-                            <label for="pwd">Nachname:</label>
-                            <input type="text" class="form-control" id="pwd">
-                        </div>
-                        <div class="form-group">
-                            <label for="gbd">Geburtdatum:</label>
-                            <input type="date" class="form-control" id="gbd">
-                        </div>
-                        <div class="form-group">
-                            <label for="kla">Klasse:</label>
-                            <input type="text" class="form-control" id="kla">
-                        </div>
-                        <div class="form-group">
-                            <label for="kll">KlassenlehrerIn:</label>
-                            <input type="text" class="form-control" id="kll">
-                        </div>
+                    <div class="form-group">
+                        <label for="gbd">Geburtdatum:</label>
+                        <input type="date" class="form-control" id="gbd">
                     </div>
-                    <div id="unfallhergang">
-
+                    <div class="form-group">
+                        <label for="kla">Klasse:</label>
+                        <input type="text" class="form-control" id="kla">
                     </div>
-                    <div id="massnahmen">
-
+                    <div class="form-group">
+                        <label for="kll">KlassenlehrerIn:</label>
+                        <input type="text" class="form-control" id="kll">
                     </div>
-                    <div id="vitalparameter">
+                </div>
+                <div id="unfallhergang">
 
-                    </div>
-                    <div id="anamnese">
+                </div>
+                <div id="massnahmen">
 
-                    </div>
-                    <div id="verbleib">
+                </div>
+                <div id="vitalparameter">
 
-                    </div>
-                    <div id="notizen">
+                </div>
+                <div id="anamnese">
 
-                    </div>
-                </main>
+                </div>
+                <div id="verbleib">
 
+                </div>
+                <div id="notizen">
 
-            </div>
-        </div>
-        <div id="roterBalkenUnten">
+                </div>
+            </main>
+
 
         </div>
+    </div>
+    <div id="roterBalkenUnten">
+
+    </div>
 
 
-        <!-- jQuery CDN -->
-         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-         <!-- Bootstrap Js CDN -->
-         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <!-- Bootstrap Js CDN -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-         <script type="text/javascript">
-             $(document).ready(function () {
-                 $('#sidebarCollapse').on('click', function () {
-                     $('#sidebar').toggleClass('active');
-                 });
-             });
-         </script>
-    </body>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#sidebarCollapse').on('click', function() {
+                $('#sidebar').toggleClass('active');
+            });
+        });
+    </script>
+</body>
+
 </html>

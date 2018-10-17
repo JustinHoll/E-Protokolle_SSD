@@ -3,6 +3,7 @@ body {
     font-family: 'Calibri', sans-serif;
     background: #fafafa;
     background-color: #ffff;
+    width:100vw;
 }
 
 p {
@@ -186,6 +187,7 @@ a.article, a.article:hover {
 #content {
     min-height: 100vh;
     transition: all 0.3s;
+    width:100%;
 }
 
 main {
