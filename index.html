@@ -87,21 +87,42 @@
                         <h2>Einsatzinformationen</h2>
                     </div>
                     <div class="row">
+                        <!-- Die Abschnitte von 12 in 3 gleich große aufteilen und 4 vergeben -->
                         <div class="col-md-4">
+                            <!-- 3 Sanitäter in der linken Spalte hinzufügen (Texteingaben)-->
                             <div class="form-group">
-                                <label for="usr">Sanitäter 1:</label>
-                                <input type="text" class="form-control" id="usr">
+                                <label for="san1">Sanitäter 1:</label>
+                                <input type="text" class="form-control" id="san1">
                             </div>
                             <div class="form-group">
-                                <label for="usr">Sanitäter 2:</label>
-                                <input type="text" class="form-control" id="usr">
+                                <label for="san2">Sanitäter 2:</label>
+                                <input type="text" class="form-control" id="san2">
                             </div>
                             <div class="form-group">
-                                <label for="usr">Sanitäter 1:</label>
-                                <input type="text" class="form-control" id="usr">
+                                <label for="san3">Sanitäter 3:</label>
+                                <input type="text" class="form-control" id="san3">
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <!-- Datum, Uhrzeit, Einsatzort hinzufügen-->
+                            <div class="form-group">
+                                <!-- Datumsformat -->
+                                <label for="dat">Datum:</label>
+                                <input type="date" class="form-control" id="dat">
+                            </div>
+                            <div class="form-group">
+                                <label for="zeit">Uhrzeit:</label>
+                                <input type="time" class="form-control" id="zeit">
+                            </div>
+                            <div class="form-group">
+                                <label for="place">Einsatzort:</label>
+                                <input type="text" class="form-control" id="place">
                             </div>
                         </div>
                     </div>
+
+
 
                 </div>
 
@@ -184,7 +205,7 @@
                             </div>
                         </div>
                     </div>
-                        <div class="form-group">
+                    <div class="form-group">
                         <label for="comment" id="sofMas">Sonstige Maßnahmen:</label>
                         <textarea class="form-control" rows="5" id="comment"></textarea>
                     </div>

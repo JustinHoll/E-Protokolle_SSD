@@ -193,18 +193,19 @@ a.article, a.article:hover {
 #einsatzinformationenDiv {
     margin: 25px;
 }
-
-#massnahmenDiv {
-    margin: 25px;
-}
-
-#sofMas {
-    margin-top: 50px;
-}
-
 #patientendatenDiv{
     margin: 25px;
 }
+#massnahmenDiv {
+    margin: 25px;
+}
+#sofMas {
+    margin-top: 50px;
+}
+#vitalparameterDiv{
+    margin: 25px;
+}
+
 
 #notizenDiv{
     margin: 25px;
