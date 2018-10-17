@@ -205,6 +205,12 @@ a.article, a.article:hover {
 #vitalparameterDiv{
     margin: 25px;
 }
+#anamneseDiv{
+    margin: 25px;
+}
+#text{
+    margin-top: 10px;
+}
 
 
 #notizenDiv{
