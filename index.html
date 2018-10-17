@@ -39,7 +39,7 @@
 
             <ul class="list-unstyled components">
                 <li>
-                    <a href="#" class="reiterBtn" id="einsatzinformationen">Einsatzinformationen</a>
+                    <a href="#" class="reiterBtn aktiverBtn" id="einsatzinformationen">Einsatzinformationen</a>
                     <a href="#" class="reiterBtn" id="patientendaten">Patientendaten</a>
                     <a href="#" class="reiterBtn" id="unfallhergang">Unfallhergang | Sachlage</a>
                     <a href="#" class="reiterBtn" id="massnahmen">Maßnahmen</a>
@@ -82,7 +82,7 @@
             </nav>
 
             <main>
-                <div id="einsatzinformationenDiv">
+                <div id="einsatzinformationenDiv" class="reiter">
                     <div>
                         <h2>Einsatzinformationen</h2>
                     </div>
@@ -126,7 +126,7 @@
 
                 </div>
 
-                <div id="patientendatenDiv">
+                <div id="patientendatenDiv" class="reiter hidden">
                     <div>
                         <h2>Patientendaten</h2>
                     </div>
@@ -162,10 +162,12 @@
 
 
                 </div>
-                <div id="unfallhergangDiv">
-
+                <div id="unfallhergangDiv" class="reiter hidden">
+                    <div>
+                        <h2>Unfalhergang | Sachlage</h2>
+                    </div>
                 </div>
-                <div id="massnahmenDiv">
+                <div id="massnahmenDiv" class="reiter hidden">
                     <div>
                         <h2>Maßnahmen</h2>
                     </div>
@@ -210,13 +212,13 @@
                         <textarea class="form-control" rows="5" id="comment"></textarea>
                     </div>
                 </div>
-                <div id="vitalparameterDiv">
+                <div id="vitalparameterDiv" class="reiter hidden">
                     <div>
                         <h2>Vitalparameter</h2>
                     </div>
 
                 </div>
-                <div id="anamneseDiv">
+                <div id="anamneseDiv" class="reiter hidden">
                     <div>
                         <h2>Anamnese</h2>
                     </div>
@@ -231,7 +233,7 @@
                         </div>
                     </div>
                 </div>
-                <div id="verbleibDiv">
+                <div id="verbleibDiv" class="reiter hidden">
                     <div>
                         <h2>Verbleib des Patienten</h2>
                     </div>
@@ -286,7 +288,7 @@
                         </div>
                     </div>
                 </div>
-        <div id="notizenDiv">
+        <div id="notizenDiv" class="reiter hidden">
             <div>
                 <h2>Notizen</h2>
             </div>

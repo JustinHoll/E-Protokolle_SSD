@@ -19,6 +19,9 @@ a, a:hover, a:focus {
     text-decoration: none;
     transition: all 0.3s;
 }
+.hidden{
+    display:none;
+}
 /* Info-Leiste oben   */
 .navbar {
     background: #fff;
@@ -112,7 +115,9 @@ a, a:hover, a:focus {
 #sidebarCollapse {
     display: none;
 }
-
+.aktiverBtn{
+    background-color:grey;
+}
 @media (max-width: 768px) {
     #sidebar {
         margin-left: -250px;
