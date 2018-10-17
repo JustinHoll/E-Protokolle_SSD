@@ -190,6 +190,14 @@ a.article, a.article:hover {
     width:100%;
 }
 
+#sofMas {
+    margin-top: 25px;
+}
+
+#patientendatenDiv{
+    margin: 25px;
+}
+
 main {
     padding-left: 15px;
     padding-right: 15px;
