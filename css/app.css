@@ -213,7 +213,7 @@ a.article, a.article:hover {
 }
 
 #erstB {
-margin-top: 50px;
+    margin-top: 50px;
 }
 
 #text {
@@ -237,6 +237,7 @@ main {
     color: #494949;
     font-weight: normal;
 }
-.radioUeber{
-    font-weight:bold;
+
+.radioUeber {
+    font-weight: bold;
 }
