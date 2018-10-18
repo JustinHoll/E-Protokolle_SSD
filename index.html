@@ -65,7 +65,7 @@
                     </div>
 
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                        <h1>Max Mustermann</h1>
+                        <h1 id="name">Max Mustermann</h1>
                         <h4>Schulsanitätsdienst XXX-Schule</h4>
                         <ul class="nav navbar-nav navbar-right">
                             <li>
@@ -134,12 +134,12 @@
                     <div class="row">
                         <div class="col-md-4">
                             <div class="form-group">
-                                <label for="usr">Vorname:</label>
-                                <input type="text" class="form-control" id="usr">
+                                <label for="vorname">Vorname:</label>
+                                <input type="text" class="form-control nameeingabe" id="vorname">
                             </div>
                             <div class="form-group">
-                                <label for="pwd">Nachname:</label>
-                                <input type="text" class="form-control" id="pwd">
+                                <label for="nachname">Nachname:</label>
+                                <input type="text" class="form-control nameeingabe" id="nachname">
                             </div>
                         </div>
                         <div class="col-md-4">
@@ -321,10 +321,6 @@
 
                             <ul class="list-group" id="RRListe">
                                 <li class="list-group-item list-group-item-success">Blutdruck</li>
-                                <li class="list-group-item">120 / 80 mmHg - 16:20 Uhr</li>
-                                <li class="list-group-item">125 / 75 mmHg - 16:25 Uhr</li>
-                                <li class="list-group-item">110 / 85 mmHg - 16:30 Uhr</li>
-                                <li class="list-group-item">120 / 90 mmHg - 16:35 Uhr</li>
                             </ul>
 
                             <div class="row">
@@ -481,7 +477,7 @@
     </script>
 
     <script src="js/reiterUmschalten.js"></script>
-    <script src="js/vitalparameter.js"></script>
+    <script src="js/patientenname.js"></script>
 </body>
 
 </html>
