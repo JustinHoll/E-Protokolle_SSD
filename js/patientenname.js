@@ -1,5 +1,11 @@
 $(".nameeingabe").blur(function() {
     $("#name").text($("#vorname").val() + " " + $("#nachname").val());
+
+    //wenn die vorname und nachname-felder leer sind, soll Patientenname als Füller erscheinen
+    if ($("#name").text() == " ") {
+        //alert('Leerer Vorname + Nachname');
+        $("#name").text("Patientenname");
+    }
 });
 
 
@@ -11,9 +17,3 @@ $("#name").click(function() {
     $('#patientendaten').addClass("aktiverBtn");
     $('#vorname').focus();
 });
-
-//wenn die vorname und nachname-felder leer sind, soll Patientenname als Füller erscheinen
-if ($(".nameeingabe").val() == "") {
-    alert('Leerer Vorname + Nachname');
-    $("#name").text("Patientenname");
-}
