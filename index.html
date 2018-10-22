@@ -168,12 +168,12 @@
                     </div>
                     <div class="form-group">
                         <label for="unfallhergangText">Unfallhergang:</label>
-                        <textarea required rows="4" class="form-control" name="unfallhergangText"></textarea>
+                        <textarea required rows="4" class="form-control" id="unfallherg" name="unfallhergangText"></textarea>
                     </div>
 
                     <div class="form-group" id="sachL">
                         <label for="sachlage">Sachlage:</label>
-                        <textarea required rows="4" class="form-control" name="sachlage"></textarea>
+                        <textarea required rows="4" class="form-control" id="sachl" name="sachlage"></textarea>
                     </div>
 
                     <h4 id="erstB">Erstbefund</h4>
@@ -400,7 +400,7 @@
                         <div class="col-md-2">
                             <div class="form-group">
                                 <label for="zeit">Uhrzeit:</label>
-                                <input type="time" class="form-control" id="zeit">
+                                <input type="time" class="form-control" id="uhrzeit">
                             </div>
                         </div>
                         <div class="col-md-2">
@@ -451,6 +451,26 @@
                 </div>
             </main>
 
+            <!-- Modal -->
+            <div class="modal fade" id="abschließen" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="ModalLabel">Einsatz abschließen</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            Möchten Sie das Protokoll absenden?
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Zurück zur Bearbeitung</button>
+                            <button type="button" class="btn btn-success" >Jetzt absenden</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
         </div>
     </div>
@@ -474,6 +494,7 @@
     <script src="js/vitalparameter.js"></script>
     <script src="js/reiterUmschalten.js"></script>
     <script src="js/patientenname.js"></script>
+    <script src="js/validierung.js"></script>
 </body>
 
 </html>

@@ -235,7 +235,10 @@ main {
     padding-top: 0px;
     padding-bottom: 0px;
 }
-
+#ModalLabel{
+    font-size: 1.7em;
+    
+}
 .radioAuswahl {
     text-align: left;
     color: #494949;
