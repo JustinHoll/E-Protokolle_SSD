@@ -16,29 +16,67 @@ $('#btnAbschließen').click(function() {
     var pers = $("#pers").val();
 
     //alert("test");
-    var meldung = "<ul>";
+    $("#Fehlerliste").remove();
+    var meldung = "<ul id=\"Fehlerliste\">";
+    var fehlermeldung = false;
+
     if (san1 == "") {
         meldung += "<li class=\"list-group-item\"> Bitte mindestens einen Sanitäter eingeben</li>";
+        var fehlermeldung = true;
     }
     if (dat == "") {
         meldung += "<li class=\"list-group-item\"> Bitte ein Datum eingeben</li>";
+        var fehlermeldung = true;
     }
     if (zeit == "") {
         meldung += "<li class=\"list-group-item\"> Bitte eine Uhrzeit eingeben</li>";
+        var fehlermeldung = true;
     }
     if (place == "") {
-        meldung += "Bitte den Einsatzort eingeben";
+        meldung += "<li class=\"list-group-item\"> Bitte den Einsatzort eingeben</li>";
+        var fehlermeldung = true;
     }
     if (vorname == "") {
-        meldung += "Bitte Vorname des Patienten eingeben";
+        meldung += "<li class=\"list-group-item\"> Bitte Vorname des Patienten eingeben</li>";
+        var fehlermeldung = true;
     }
     if (nachname == "") {
-        meldung += "Bitte Nachname des Patienten eingeben";
+        meldung += "<li class=\"list-group-item\"> Bitte Nachname des Patienten eingeben</li>";
+        var fehlermeldung = true;
     }
-    meldung+="</ul>";
+    if (gbd == "") {
+        meldung += "<li class=\"list-group-item\"> Bitte Geburtdatum des Patienten eingeben</li>";
+        var fehlermeldung = true;
+    }
+    if (kla == "") {
+        meldung += "<li class=\"list-group-item\"> Bitte Klasse des Patienten eingeben</li>";
+        var fehlermeldung = true;
+    }
+    if (kll == "") {
+        meldung += "<li class=\"list-group-item\"> Bitte einen KlassenlehrerIn eingeben</li>";
+        var fehlermeldung = true;
+    }
+    if (unfallherg == "") {
+        meldung += "<li class=\"list-group-item\"> Bitte etwas bei Unfallhergang eingeben</li>";
+        var fehlermeldung = true;
+    }
+    if (sachl == "") {
+        meldung += "<li class=\"list-group-item\"> Bitte etwas bei Sachlage eingeben</li>";
+        var fehlermeldung = true;
+    }
+    if (uhrzeit == "") {
+        meldung += "<li class=\"list-group-item\"> Bitte Uhrzeit bei Verbleib eingeben</li>";
+        var fehlermeldung = true;
+    }
+    if (pers == "") {
+        meldung += "<li class=\"list-group-item\"> Bitte übergebene Person bei Verbleib eingeben</li>";
+        var fehlermeldung = true;
+    }
 
-$(".modal-body").append(meldung);
-
+    meldung += "</ul>";
+    if (fehlermeldung == true) {
+        $(".modal-body").append(meldung);
+    }
     $('#abschließen').modal('show');
 
 });

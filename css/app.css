@@ -237,7 +237,11 @@ main {
 }
 #ModalLabel{
     font-size: 1.7em;
-    
+
+}
+#Fehlerliste li{
+    color: white;
+    background-color: #990000;
 }
 .radioAuswahl {
     text-align: left;
