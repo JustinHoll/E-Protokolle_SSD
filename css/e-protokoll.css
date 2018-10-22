@@ -1,19 +1,50 @@
-#e-protokoll{
-    margin:35px;
+#e-protokoll {
+    margin: 35px;
 }
-.borderBlack{
+
+#horizontaleLinie {
+    height: 2px;
+    width: 100%;
+    background-color: black;
+    margin-bottom: 30px;
+}
+
+#unfallhergang {
+    height: 100%;
+}
+
+.borderBlack {
+    ;
     border: 1px solid black;
 }
+
+.row>div {
+    padding: 20px;
+    height: 100%;
+}
+
 #e-protokoll > .row > div{
     height:100%;
     padding:20px;
 }
-#logoDiv{
 
-}
-#logoMalteser{
+#logoMalteser {
     width: 100%;
-    max-height:100%;
+    max-height: 100%;
+}
+
+#reihe1 {
+    height: 100px;
+    /*Commit Test*/
+}
+
+#reihe2 {
+    height: 250px;
+}
+
+#reihe3 {
+    height: 200px;
+    /*Commit Test*/
 }
 #reihe1{
     height:115px;
@@ -48,4 +79,11 @@ body{
 }
 #uhrzeitDatumDiv{
     padding: 0;
+}
+#reihe4 {
+    height: 100px;
+    /*Commit Test*/
+}
+body {
+    width: 900px;
 }
