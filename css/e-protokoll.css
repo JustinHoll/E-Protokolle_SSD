@@ -1,21 +1,89 @@
-#e-protokoll{
-    margin:35px;
+#e-protokoll {
+    margin: 35px;
 }
-.borderBlack{
+
+#horizontaleLinie {
+    height: 2px;
+    width: 100%;
+    background-color: black;
+    margin-bottom: 30px;
+}
+
+#unfallhergang {
+    height: 100%;
+}
+
+.borderBlack {
+    ;
     border: 1px solid black;
 }
-.row > div{
+
+.row>div {
     padding: 20px;
+    height: 100%;
+}
+
+#e-protokoll > .row > div{
     height:100%;
+    padding:20px;
 }
-#logoMalteser{
+
+#logoMalteser {
     width: 100%;
-    max-height:100%;
+    max-height: 100%;
 }
-#reihe1{
-    height:100px;
+
+#reihe1 {
+    height: 100px;
     /*Commit Test*/
 }
+
+#reihe2 {
+    height: 250px;
+}
+
+#reihe3 {
+    height: 200px;
+    /*Commit Test*/
+}
+#reihe1{
+    height:115px;
+}
 body{
-    width:900px;
+    width:800px;
+}
+.horizontaleLinie{
+    width:100%;
+    height: 2px;
+    background-color: black;
+}
+#sanitaeter .horizontaleLinie{
+    margin: 10px;
+}
+.sanitaeterInput{
+    width:100%;
+}
+#sanitaeter p{
+    margin:0;
+    padding:0;
+}
+#sanitaeter > p{
+    margin-bottom: 5px;
+    padding:0;
+}
+#sanitaeter .sanitaeterInput{
+    border-bottom: 1px solid black;
+}
+#sanitaeter{
+    margin-top: 0;
+}
+#uhrzeitDatumDiv{
+    padding: 0;
+}
+#reihe4 {
+    height: 100px;
+    /*Commit Test*/
+}
+body {
+    width: 900px;
 }
