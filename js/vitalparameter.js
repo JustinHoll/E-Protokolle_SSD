@@ -17,7 +17,7 @@ $('#hinzu1').click(function() {
     $('#uhrRR').val('');
 });
 
-//Werte für Puls Felder auslesen
+//Werte für Puls Felder auslesen..
 $('#hinzu2').click(function() {
     var wert1 = $("#hf").val(); //.val --> Wert des Feldes in Variable speichern
     var wert2 = $("#uhrHF").val();
