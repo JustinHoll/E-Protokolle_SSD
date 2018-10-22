@@ -1,3 +1,3 @@
-//Code zum konvertieren zu PDF 
-var element = document.getElementById('element-to-print');
+//Code zum konvertieren zu PDF
+var element = document.getElementById('e-protokoll');
 html2pdf(element);
