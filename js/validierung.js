@@ -73,7 +73,7 @@ $('#btnAbschließen').click(function() {
         var fehlermeldung = true;
     }
 
-    meldung += "</ul>";
+    meldung += "</ul>"; // Meldung/en der Liste hinzufügen
     if (fehlermeldung == true) {
         $(".modal-body").append(meldung);
     }
