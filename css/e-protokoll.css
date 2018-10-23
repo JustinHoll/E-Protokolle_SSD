@@ -9,6 +9,13 @@
     margin-bottom: 30px;
 }
 
+#vertikaleLinie {
+    height: 100%;
+    width: 2px;
+    background-color: black;
+    margin-left: : 30px;
+}
+
 #unfallhergang {
     height: 100%;
 }
@@ -23,9 +30,9 @@
     height: 100%;
 }
 
-#e-protokoll > .row > div{
-    height:100%;
-    padding:20px;
+#e-protokoll>.row>div {
+    height: 100%;
+    padding: 20px;
 }
 
 #logoMalteser {
@@ -33,8 +40,8 @@
     max-height: 100%;
 }
 
-#reihe1{
-    height:115px;
+#reihe1 {
+    height: 115px;
 }
 
 #reihe2 {
@@ -44,44 +51,55 @@
 #reihe3 {
     height: 200px;
 }
+
 #reihe4 {
     height: 100px;
 }
-#reihe8{
+
+#reihe8 {
     height: 100px;
 }
 
-body{
-    width:800px;
+body {
+    width: 800px;
 }
-.horizontaleLinie{
-    width:100%;
+
+.horizontaleLinie {
+    width: 100%;
     height: 2px;
     background-color: black;
 }
-#sanitaeter .horizontaleLinie{
+
+#sanitaeter .horizontaleLinie {
     margin: 10px;
 }
-.sanitaeterInput{
-    width:100%;
+
+.sanitaeterInput {
+    width: 100%;
 }
-#sanitaeter p{
-    margin:0;
-    padding:0;
-}
-#sanitaeter > p{
-    margin-bottom: 5px;
-    padding:0;
-}
-#sanitaeter .sanitaeterInput{
-    border-bottom: 1px solid black;
-}
-#sanitaeter{
-    margin-top: 0;
-}
-#uhrzeitDatumDiv{
+
+#sanitaeter p {
+    margin: 0;
     padding: 0;
 }
+
+#sanitaeter>p {
+    margin-bottom: 5px;
+    padding: 0;
+}
+
+#sanitaeter .sanitaeterInput {
+    border-bottom: 1px solid black;
+}
+
+#sanitaeter {
+    margin-top: 0;
+}
+
+#uhrzeitDatumDiv {
+    padding: 0;
+}
+
 body {
     width: 900px;
 }
