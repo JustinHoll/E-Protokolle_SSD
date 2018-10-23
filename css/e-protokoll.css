@@ -33,9 +33,8 @@
     max-height: 100%;
 }
 
-#reihe1 {
-    height: 100px;
-    /*Commit Test*/
+#reihe1{
+    height:115px;
 }
 
 #reihe2 {
@@ -44,11 +43,14 @@
 
 #reihe3 {
     height: 200px;
-    /*Commit Test*/
 }
-#reihe1{
-    height:115px;
+#reihe4 {
+    height: 100px;
 }
+#reihe8{
+    height: 100px;
+}
+
 body{
     width:800px;
 }
@@ -79,10 +81,6 @@ body{
 }
 #uhrzeitDatumDiv{
     padding: 0;
-}
-#reihe4 {
-    height: 100px;
-    /*Commit Test*/
 }
 body {
     width: 900px;
