@@ -26,6 +26,11 @@ a, a:hover, a:focus {
 #Fehlerliste{
     padding-left: 0px;
 }
+#zurück{
+    color: white;
+    background-color: #696969
+    
+}
 
 /* Info-Leiste oben   */
 .navbar {
