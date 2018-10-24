@@ -1,0 +1,3 @@
+$('#ausblenden').click(function() {
+    
+}
