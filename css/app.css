@@ -23,6 +23,14 @@ a, a:hover, a:focus {
 .hidden {
     display: none;
 }
+#Fehlerliste{
+    padding-left: 0px;
+}
+#zurück{
+    color: white;
+    background-color: #696969
+    
+}
 
 /* Info-Leiste oben   */
 .navbar {
