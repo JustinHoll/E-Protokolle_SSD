@@ -46,7 +46,7 @@ $('#btnAbschließen').click(function() {
         var fehlermeldung = true;
     }
     if (gbd == "") {
-        meldung += "<li class=\"list-group-item\"> Bitte Geburtdatum des Patienten eingeben</li>";
+        meldung += "<li class=\"list-group-item\"> Bitte Geburtsdatum des Patienten eingeben</li>";
         var fehlermeldung = true;
     }
     if (kla == "") {
