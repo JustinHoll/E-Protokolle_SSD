@@ -3,5 +3,5 @@ $('#ausblenden').click(function() {
     var san1 = $("#san1").val();
     alert("San1: " + san1); // diese Zeile ist nur zum Testen, ob Sanitäter 1 erfolgreich rausgezogen wurde
 
-
+    
 });
