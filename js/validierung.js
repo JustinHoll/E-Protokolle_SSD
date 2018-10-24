@@ -17,6 +17,7 @@ $('#btnAbschließen').click(function() {
 
     //alert("test");
     $("#Fehlerliste").remove();
+    $(".modal-body p").remove();
     var meldung = "<ul id=\"Fehlerliste\">";
     var fehlermeldung = false;
 
@@ -72,10 +73,17 @@ $('#btnAbschließen').click(function() {
         meldung += "<li class=\"list-group-item\"> Bitte übergebene Person bei Verbleib eingeben</li>";
         var fehlermeldung = true;
     }
+    if (!$("input[name='zustand']:checked").val()){
+        meldung += "<li class=\"list-group-item\"> Bitte einen Zustand bei Verbleib auswählen</li>";
+        var fehlermeldung = true;
+    }
 
     meldung += "</ul>"; // Meldung/en der Liste hinzufügen
     if (fehlermeldung == true) {
         $(".modal-body").append(meldung);
+    }
+    else{
+        $(".modal-body").append("<p>Möchten Sie das Protokoll absenden?</p>")
     }
     $('#abschließen').modal('show');
 

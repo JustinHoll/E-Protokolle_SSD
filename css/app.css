@@ -23,6 +23,9 @@ a, a:hover, a:focus {
 .hidden {
     display: none;
 }
+#Fehlerliste{
+    padding-left: 0px;
+}
 
 /* Info-Leiste oben   */
 .navbar {
