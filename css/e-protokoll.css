@@ -116,3 +116,18 @@ table, th, td {
     border: 1px solid black;
     border-collapse: separate;
 }
+#ueberMassnahmen{
+    padding-left: 20px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+#reihe6 .col-xs-4{
+    padding-top:0;
+    height: 100%;
+}
+#reihe6{
+    height: 200px;
+}
+#reihe6 .col-xs-6{
+    padding-top:0px;
+}
