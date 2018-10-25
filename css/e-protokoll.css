@@ -45,7 +45,12 @@
 }
 
 #reihe2 {
-    height: 250px;
+    height: 200px;
+}
+
+#e-protokoll #patientennameUndCo{
+    padding-top: 0px;
+    padding-bottom: 0px;
 }
 
 #reihe3 {
@@ -53,7 +58,7 @@
 }
 
 #reihe4 {
-    height: 100px;
+    height: 60px;
 }
 
 #reihe8 {
@@ -96,8 +101,12 @@ body {
     margin-top: 0;
 }
 
-#uhrzeitDatumDiv {
-    padding: 0;
+#e-protokoll .row > #uhrzeitDatumDiv {
+    padding-top: 0px;
+}
+
+#uhrzeitDatumDiv .col-xs-6{
+    padding-bottom: 0px;
 }
 
 body {
@@ -121,4 +130,18 @@ table, th,td {
 }
 #reihe6 .col-xs-6{
     padding-top:0px;
+}
+#reihe5{
+    height:240px;
+}
+#reihe5 p{
+    font-size: 12px;
+}
+#reihe5 #erstbefundHeading{
+    font-size: 15px;
+}
+#reihe5 .col-xs-12 .row > div{
+    padding: 0px;
+    margin: 0px;
+    padding-left: 20px;
 }
