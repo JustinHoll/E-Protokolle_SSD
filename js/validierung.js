@@ -81,11 +81,11 @@ $('#btnAbschließen').click(function() {
     meldung += "</ul>"; // Meldung/en der Liste hinzufügen
     if (fehlermeldung == true) {
         $(".modal-body").append(meldung);
-        $("#ausblenden").hide();
+        $("#absendenBtn").hide();
     }
     else{
         $(".modal-body").append("<p>Möchten Sie das Protokoll absenden?</p>");
-        $("#ausblenden").show();
+        $("#absendenBtn").show();
     }
     $('#abschließen').modal('show');
 
