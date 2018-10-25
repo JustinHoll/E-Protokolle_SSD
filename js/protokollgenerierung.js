@@ -17,10 +17,10 @@ $('#absendenBtn').click(function() {
     // Einsatzort in Protokoll noch hinzufügen?
 
     // Patientendaten Felder auslesen und in Variablen speichern
-    var name = $("#vorname" + " #nachname").val();
+    var name = $("#vorname").val() + " " + $("#nachname").val();
     var gbd = $("#gbd").val();
     var klasse = $("#kla").val();
-
+    alert("TEST: " + name);
     //Feld von Unfallhergang auslesen, in variable speichern
     var unfallherg = $("#unfallherg").val();
 
