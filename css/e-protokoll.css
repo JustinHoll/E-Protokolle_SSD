@@ -2,13 +2,6 @@
     margin: 35px;
 }
 
-#horizontaleLinie {
-    height: 2px;
-    width: 100%;
-    background-color: black;
-    margin-bottom: 30px;
-}
-
 #vertikaleLinie {
     height: 100%;
     width: 2px;
