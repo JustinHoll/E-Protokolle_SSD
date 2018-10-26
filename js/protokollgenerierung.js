@@ -186,12 +186,13 @@ $('#absendenBtn').click(function() {
         var lichtreaktionrechts = " checked ";
     }
     //Vitalparameter Liste
+    //RR
     var blut1 = $("#hf1").text();
     var blut2 = $("#hf2").text();
     var blut3 = $("#hf3").text();
     var blut4 = $("#hf4").text();
     var blut5 = $("#hf5").text();
-
+    //HF
     var puls1 = $("#puls1").text();
     var puls2 = $("#puls2").text();
     var puls3 = $("#puls3").text();
