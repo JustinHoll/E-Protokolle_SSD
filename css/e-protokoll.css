@@ -21,6 +21,10 @@
     height: 35px;
 }
 
+.dick{
+    font-weight: bold;
+}
+
 .borderBlack {
     ;
     border: 1px solid black;
