@@ -26,8 +26,10 @@ $('#absendenBtn').click(function() {
     var unfallherg = $("#unfallherg").val();
     var sachl = $("#sachl").val();
     var anamnese = $("#text").val();
-    var massnahmen = $("#massnahmen").val();
-    var notizen = $("#notizenText").val();
+    var masnahmen = $("#masnahmen").val();
+    var notizen = $("#notizenfeld").val();
+    var uhrzeit = $("#uhrzeit").val();
+    var pers = $("#pers").val();
 
     var checkMassnPsych = "";
     if($("#checkMassnPsych").prop("checked") == true){

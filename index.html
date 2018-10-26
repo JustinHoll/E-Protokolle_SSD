@@ -93,15 +93,15 @@
                             <!-- 3 Sanitäter in der linken Spalte hinzufügen (Texteingaben)-->
                             <div class="form-group">
                                 <label for="san1">Sanitäter 1:</label>
-                                <input type="text" class="form-control" id="san1">
+                                <input type="text" class="form-control" id="san1" maxlength="30">
                             </div>
                             <div class="form-group">
                                 <label for="san2">Sanitäter 2:</label>
-                                <input type="text" class="form-control" id="san2">
+                                <input type="text" class="form-control" id="san2" maxlength="30">
                             </div>
                             <div class="form-group">
                                 <label for="san3">Sanitäter 3:</label>
-                                <input type="text" class="form-control" id="san3">
+                                <input type="text" class="form-control" id="san3" maxlength="30">
                             </div>
                         </div>
 
@@ -118,7 +118,7 @@
                             </div>
                             <div class="form-group">
                                 <label for="place">Einsatzort:</label>
-                                <input type="text" class="form-control" id="place">
+                                <input type="text" class="form-control" id="place" maxlength="15">
                             </div>
                         </div>
                     </div>
@@ -136,11 +136,11 @@
                         <div class="col-md-4">
                             <div class="form-group">
                                 <label for="vorname">Vorname:</label>
-                                <input type="text" class="form-control nameeingabe" id="vorname">
+                                <input type="text" class="form-control nameeingabe" id="vorname" maxlength="15">
                             </div>
                             <div class="form-group">
                                 <label for="nachname">Nachname:</label>
-                                <input type="text" class="form-control nameeingabe" id="nachname">
+                                <input type="text" class="form-control nameeingabe" id="nachname" maxlength="15">
                             </div>
                         </div>
                         <div class="col-md-4">
@@ -152,11 +152,11 @@
                         <div class="col-md-4">
                             <div class="form-group">
                                 <label for="kla">Klasse:</label>
-                                <input type="text" class="form-control" id="kla">
+                                <input type="text" class="form-control" id="kla" maxlength="3">
                             </div>
                             <div class="form-group">
                                 <label for="kll">KlassenlehrerIn:</label>
-                                <input type="text" class="form-control" id="kll">
+                                <input type="text" class="form-control" id="kll" maxlength="30">
                             </div>
                         </div>
                     </div>
@@ -169,12 +169,12 @@
                     </div>
                     <div class="form-group">
                         <label for="unfallhergangText">Unfallhergang:</label>
-                        <textarea required rows="4" class="form-control" id="unfallherg" name="unfallhergangText"></textarea>
+                        <textarea required rows="4" class="form-control" id="unfallherg" name="unfallhergangText" maxlength="200"></textarea>
                     </div>
 
                     <div class="form-group" id="sachL">
                         <label for="sachlage">Sachlage:</label>
-                        <textarea required rows="4" class="form-control" id="sachl" name="sachlage"></textarea>
+                        <textarea required rows="4" class="form-control" id="sachl" name="sachlage" maxlength="200"></textarea>
                     </div>
 
                     <h4 id="erstB">Erstbefund</h4>
@@ -310,7 +310,7 @@
                     </div>
                     <div class="form-group">
                         <label for="comment" id="sofMas">Sonstige Maßnahmen:</label>
-                        <textarea class="form-control" rows="5" id="massnahmen"></textarea>
+                        <textarea class="form-control" rows="5" id="masnahmen"></textarea>
                     </div>
                 </div>
                 <div id="vitalparameterDiv" class="reiter hidden">
@@ -447,7 +447,11 @@
                     </div>
                     <div class="form-group">
                         <label for="comment"></label>
+<<<<<<< HEAD
                         <textarea class="form-control" rows="5" id="notizenText"></textarea>
+=======
+                        <textarea class="form-control" rows="5" id="notizenfeld"></textarea>
+>>>>>>> 0765f6ee88cba7f133c2e1930020e24614b50e1c
                     </div>
                 </div>
             </main>
