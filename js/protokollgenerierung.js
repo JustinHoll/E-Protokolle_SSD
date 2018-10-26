@@ -13,12 +13,14 @@ $('#absendenBtn').click(function() {
     var san3 = $("#san3").val();
 
     var dat = $("#dat").val();
+    alert("Datum: " + dat);
     var zeit = $("#zeit").val();
     var place = $("#place").val();
 
     // Patientendaten Felder auslesen und in Variablen speichern
     var name = $("#vorname").val() + " " + $("#nachname").val();
-    var gbd = $("#gbd").val() date(dd.mm.yyyy);
+    var gbd = $("#gbd").val();
+    alert("Geburtsdatum: " + gbd);
     var klasse = $("#kla").val();
     //alert("TEST: " + name);
     var kll = $("#kll").val();
