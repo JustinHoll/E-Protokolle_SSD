@@ -93,15 +93,15 @@
                             <!-- 3 Sanitäter in der linken Spalte hinzufügen (Texteingaben)-->
                             <div class="form-group">
                                 <label for="san1">Sanitäter 1:</label>
-                                <input type="text" class="form-control" id="san1" maxlength="30">
+                                <input type="text" class="form-control" id="san1" maxlength="25">
                             </div>
                             <div class="form-group">
                                 <label for="san2">Sanitäter 2:</label>
-                                <input type="text" class="form-control" id="san2" maxlength="30">
+                                <input type="text" class="form-control" id="san2" maxlength="25">
                             </div>
                             <div class="form-group">
                                 <label for="san3">Sanitäter 3:</label>
-                                <input type="text" class="form-control" id="san3" maxlength="30">
+                                <input type="text" class="form-control" id="san3" maxlength="25">
                             </div>
                         </div>
 
@@ -118,7 +118,7 @@
                             </div>
                             <div class="form-group">
                                 <label for="place">Einsatzort:</label>
-                                <input type="text" class="form-control" id="place" maxlength="15">
+                                <input type="text" class="form-control" id="place" maxlength="22">
                             </div>
                         </div>
                     </div>
@@ -174,7 +174,7 @@
 
                     <div class="form-group" id="sachL">
                         <label for="sachlage">Sachlage:</label>
-                        <textarea required rows="4" class="form-control" id="sachl" name="sachlage" maxlength="200"></textarea>
+                        <textarea required rows="4" class="form-control" id="sachl" name="sachlage" maxlength="440"></textarea>
                     </div>
 
                     <h4 id="erstB">Erstbefund</h4>
@@ -310,7 +310,7 @@
                     </div>
                     <div class="form-group">
                         <label for="comment" id="sofMas">Sonstige Maßnahmen:</label>
-                        <textarea class="form-control" rows="5" id="masnahmen"></textarea>
+                        <textarea class="form-control" rows="5" id="masnahmen" maxlength="240"></textarea>
                     </div>
                 </div>
                 <div id="vitalparameterDiv" class="reiter hidden">
@@ -388,7 +388,7 @@
                             <div class="form-group">
                                 <div label for="text">Symptome, Allergien, Medikamente, Präerkrankungen, Letzte Mahlzeit, Ereignis, Risikofaktoren, Schwangerschaft:</label>
                                 </div>
-                                <textarea class="form-control" rows="7" id="text"></textarea>
+                                <textarea class="form-control" rows="7" id="text" maxlength="60"></textarea>
                             </div>
                         </div>
                     </div>
@@ -407,7 +407,7 @@
                         <div class="col-md-2">
                             <div class="form-group">
                                 <label for="pers">Übergeben an:</label>
-                                <input type="text" class="form-control" id="pers">
+                                <input type="text" class="form-control" id="pers" maxlength="40">
                             </div>
                         </div>
                     </div>
@@ -447,7 +447,7 @@
                     </div>
                     <div class="form-group">
                         <label for="comment"></label>
-                        <textarea class="form-control" rows="5" id="notizenfeld"></textarea>
+                        <textarea class="form-control" rows="5" id="notizenfeld" maxlength="40"></textarea>
                     </div>
                 </div>
             </main>
