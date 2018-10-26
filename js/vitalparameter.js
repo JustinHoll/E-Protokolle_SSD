@@ -25,7 +25,7 @@ $('#hinzu2').click(function() {
     // Variable feld2 erstellen, die die ausgelesenen Werte erhält
     var feld2 = "<li class=\"list-group-item\" id=\"puls" +(++nr)+ "\">" + wert1 + " / min - " + wert2 + " Uhr</li>";
     //Werte (feld2) in Liste einfügen
-    if (wert1 != "" && wert2 != "") {
+    if (wert1 != "" && wert2 != "") { 
         $("#HFListe").append(feld2);
     }
     //ausgelesene Felder wieder leeren
