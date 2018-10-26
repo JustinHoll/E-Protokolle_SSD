@@ -16,14 +16,14 @@ $('#hinzu1').click(function() {
     $('#diastRR').val('');
     $('#uhrRR').val('');
 });
-
+    var nr = 0; //Nummer für Reihe in der Liste
 //Werte für Puls Felder auslesen
 $('#hinzu2').click(function() {
     var wert1 = $("#hf").val(); //.val --> Wert des Feldes in Variable speichern
     var wert2 = $("#uhrHF").val();
     //Ausgelesene Werte speichern
     // Variable feld2 erstellen, die die ausgelesenen Werte erhält
-    var feld2 = "<li class=\"list-group-item\">" + wert1 + " / min - " + wert2 + " Uhr</li>";
+    var feld2 = "<li class=\"list-group-item\" id=\"puls" +(++nr)+ "\">" + wert1 + " / min - " + wert2 + " Uhr</li>";
     //Werte (feld2) in Liste einfügen
     if (wert1 != "" && wert2 != "") {
         $("#HFListe").append(feld2);
