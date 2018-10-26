@@ -18,7 +18,7 @@ $('#absendenBtn').click(function() {
 
     // Patientendaten Felder auslesen und in Variablen speichern
     var name = $("#vorname").val() + " " + $("#nachname").val();
-    var gbd = $("#gbd").val();
+    var gbd = $("#gbd").val() date(dd.mm.yyyy);
     var klasse = $("#kla").val();
     //alert("TEST: " + name);
     var kll = $("#kll").val();
