@@ -1,12 +1,12 @@
 /* Allgemein */
-body {
+#bodyApp .wrapper{
     font-family: 'Calibri', sans-serif;
     background: #fafafa;
     background-color: #ffff;
     width: 100vw;
 }
 
-p {
+#bodyApp .wrapper p {
     font-family: 'Calibri', sans-serif;
     font-size: 1.1em;
     font-weight: 300;
@@ -178,7 +178,7 @@ a[aria-expanded="true"]::before {
     content: '\e260';
 }
 
-ul ul a {
+#bodyApp ul ul a {
     font-size: 0.9em !important;
     padding-left: 30px !important;
     background: #6d7fcc;
@@ -238,7 +238,7 @@ a.article, a.article:hover {
     margin-bottom: 10px;
 }
 
-main {
+#bodyApp main {
     padding-left: 15px;
     padding-right: 15px;
     padding-top: 0px;
@@ -254,12 +254,12 @@ main {
 }
 
 
-.radioAuswahl {
+#bodyApp .radioAuswahl {
     text-align: left;
     color: #494949;
     font-weight: normal;
 }
 
-.radioUeber {
+#bodyApp .radioUeber {
     font-weight: bold;
 }
