@@ -185,6 +185,9 @@ $('#absendenBtn').click(function() {
     if ($("#lichtreaktionrechts").prop("checked") == true) {
         var lichtreaktionrechts = " checked ";
     }
+    //Vitalparameter Liste
+    var puls1 = $("#puls1").val();
+
 
 
 
