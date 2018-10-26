@@ -25,8 +25,7 @@ $('#absendenBtn').click(function() {
     var unfallherg = $("#unfallherg").val();
 
 
+    var eProtokoll = ;
 
-
-
-
+    html2pdf(eProtokoll);
 });
