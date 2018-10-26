@@ -93,15 +93,15 @@
                             <!-- 3 Sanitäter in der linken Spalte hinzufügen (Texteingaben)-->
                             <div class="form-group">
                                 <label for="san1">Sanitäter 1:</label>
-                                <input type="text" class="form-control" id="san1" maxlength="30">
+                                <input type="text" class="form-control" id="san1" maxlength="25">
                             </div>
                             <div class="form-group">
                                 <label for="san2">Sanitäter 2:</label>
-                                <input type="text" class="form-control" id="san2" maxlength="30">
+                                <input type="text" class="form-control" id="san2" maxlength="25">
                             </div>
                             <div class="form-group">
                                 <label for="san3">Sanitäter 3:</label>
-                                <input type="text" class="form-control" id="san3" maxlength="30">
+                                <input type="text" class="form-control" id="san3" maxlength="25">
                             </div>
                         </div>
 
@@ -156,7 +156,7 @@
                             </div>
                             <div class="form-group">
                                 <label for="kll">KlassenlehrerIn:</label>
-                                <input type="text" class="form-control" id="kll" maxlength="30">
+                                <input type="text" class="form-control" id="kll" maxlength="20">
                             </div>
                         </div>
                     </div>
@@ -169,12 +169,12 @@
                     </div>
                     <div class="form-group">
                         <label for="unfallhergangText">Unfallhergang:</label>
-                        <textarea required rows="4" class="form-control" id="unfallherg" name="unfallhergangText" maxlength="200"></textarea>
+                        <textarea required rows="4" class="form-control" id="unfallherg" name="unfallhergangText" maxlength="230"></textarea>
                     </div>
 
                     <div class="form-group" id="sachL">
                         <label for="sachlage">Sachlage:</label>
-                        <textarea required rows="4" class="form-control" id="sachl" name="sachlage" maxlength="200"></textarea>
+                        <textarea required rows="4" class="form-control" id="sachl" name="sachlage" maxlength="450"></textarea>
                     </div>
 
                     <h4 id="erstB">Erstbefund</h4>
@@ -246,20 +246,20 @@
                             <div class="form-group">
                                 <p class="radioUeber" style="font-weight:bold">links - rechts</p>
                                 <p class="radioAuswahl">
-                                    <input type="radio" id="eng" name="links" value="eng"> -
-                                    <input type="radio" id="eng" name="rechts" value="eng">
+                                    <input type="radio" id="englinks" name="links" value="eng"> -
+                                    <input type="radio" id="engrechts" name="rechts" value="eng">
                                     <label style="font-weight:normal"> eng</label></br>
-                                    <input type="radio" id="mittel" name="links" value="mittel"> -
-                                    <input type="radio" id="mittel" name="rechts" value="mittel">
+                                    <input type="radio" id="mittellinks" name="links" value="mittel"> -
+                                    <input type="radio" id="mittelrechts" name="rechts" value="mittel">
                                     <label style="font-weight:normal"> mittel</label></br>
-                                    <input type="radio" id="weit" name="links" value="weit"> -
-                                    <input type="radio" id="weit" name="rechts" value="weit">
+                                    <input type="radio" id="weitlinks" name="links" value="weit"> -
+                                    <input type="radio" id="weitrechts" name="rechts" value="weit">
                                     <label style="font-weight:normal"> weit</label></br>
-                                    <input type="radio" id="entrundet" name="links" value="entrundet"> -
-                                    <input type="radio" id="entrundet" name="rechts" value="entrundet">
+                                    <input type="radio" id="entrundetlinks" name="links" value="entrundet"> -
+                                    <input type="radio" id="entrundetrechts" name="rechts" value="entrundet">
                                     <label style="font-weight:normal"> entrundet</label></br>
-                                    <input type="radio" id="lichtreaktion" name="links" value="lichtreaktion"> -
-                                    <input type="radio" id="lichtreaktion" name="rechts" value="lichtreaktion">
+                                    <input type="radio" id="lichtreaktionlinks" name="links" value="lichtreaktion"> -
+                                    <input type="radio" id="lichtreaktionrechts" name="rechts" value="lichtreaktion">
                                     <label style="font-weight:normal"> Lichtreaktion</label></br></p>
                             </div>
 
@@ -310,7 +310,7 @@
                     </div>
                     <div class="form-group">
                         <label for="comment" id="sofMas">Sonstige Maßnahmen:</label>
-                        <textarea class="form-control" rows="5" id="masnahmen"></textarea>
+                        <textarea class="form-control" rows="5" id="masnahmen" maxlength="230"></textarea>
                     </div>
                 </div>
                 <div id="vitalparameterDiv" class="reiter hidden">
@@ -388,7 +388,7 @@
                             <div class="form-group">
                                 <div label for="text">Symptome, Allergien, Medikamente, Präerkrankungen, Letzte Mahlzeit, Ereignis, Risikofaktoren, Schwangerschaft:</label>
                                 </div>
-                                <textarea class="form-control" rows="7" id="text"></textarea>
+                                <textarea class="form-control" rows="7" id="text" maxlength="55"></textarea>
                             </div>
                         </div>
                     </div>
@@ -407,7 +407,7 @@
                         <div class="col-md-2">
                             <div class="form-group">
                                 <label for="pers">Übergeben an:</label>
-                                <input type="text" class="form-control" id="pers">
+                                <input type="text" class="form-control" id="pers" maxlength="50">
                             </div>
                         </div>
                     </div>
@@ -447,7 +447,7 @@
                     </div>
                     <div class="form-group">
                         <label for="comment"></label>
-                        <textarea class="form-control" rows="5" id="notizenfeld"></textarea>
+                        <textarea class="form-control" rows="5" id="notizenfeld" maxlength="50"></textarea>
                     </div>
                 </div>
             </main>
