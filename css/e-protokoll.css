@@ -21,7 +21,7 @@
     height: 35px;
 }
 
-.dick{
+.dick {
     font-weight: bold;
 }
 
@@ -52,11 +52,11 @@
     height: 120px;
 }
 
-#e-protokoll #patientennameUndCo{
+#e-protokoll #patientennameUndCo {
     padding: 0px;
 }
 
-#patientennameUndCo p{
+#patientennameUndCo p {
     margin-left: 15px;
     margin-right: 15px;
 }
@@ -109,11 +109,11 @@
     margin-top: 0;
 }
 
-#e-protokoll .row > #uhrzeitDatumDiv {
+#e-protokoll .row>#uhrzeitDatumDiv {
     padding-top: 0px;
 }
 
-#uhrzeitDatumDiv .col-xs-6{
+#uhrzeitDatumDiv .col-xs-6 {
     padding-bottom: 0px;
 }
 
@@ -125,40 +125,50 @@
     border: 1px solid black;
     border-collapse: separate;
 }
-#ueberMassnahmen{-
-    padding-left: 20px;
+
+#ueberMassnahmen {
+    - padding-left: 20px;
     margin-bottom: 0px;
     padding-bottom: 0px;
 }
-#reihe6 .col-xs-4{
-    padding-top:0;
+
+#reihe6 .col-xs-4 {
+    padding-top: 0;
     height: 100%;
 }
-#reihe6{
+
+#reihe6 {
     height: 200px;
 }
-#reihe6 .col-xs-6{
-    padding-top:0px;
+
+#reihe6 .col-xs-6 {
+    padding-top: 0px;
 }
-#reihe5{
-    height:240px;
+
+#reihe5 {
+    height: 240px;
 }
-#reihe5 p{
+
+#reihe5 p {
     font-size: 12px;
 }
-#reihe5 #erstbefundHeading{
+
+#reihe5 #erstbefundHeading {
     font-size: 15px;
 }
-#reihe5 .col-xs-12 .row > div{
+
+#reihe5 .col-xs-12 .row>div {
     padding: 0px;
     margin: 0px;
     padding-left: 20px;
 }
-#e-protokoll #tabelleVital{
+
+#e-protokoll #tabelleVital {
     padding: 0px;
 }
-#divSonstMassnahmen{
-    border-top:0px;
+
+#divSonstMassnahmen {
+    border-top: 0px;
     border-right: 0px;
     border-bottom: 0px;
     border-left: 2px solid black;
