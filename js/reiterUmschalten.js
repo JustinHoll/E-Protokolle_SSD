@@ -55,3 +55,6 @@ $(document).on('keydown', function(e) {
 
 let dat = new Date().toISOString().substr(0, 10);
 document.querySelector("#dat").value = dat;
+
+var time = new Date().toISOString().substr(11, 5);
+document.querySelector('#zeit').value = time;
