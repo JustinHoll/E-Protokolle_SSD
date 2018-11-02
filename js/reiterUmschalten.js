@@ -51,5 +51,7 @@ $(document).on('keydown', function(e) {
         aktuelleReiterId = naechsterReiter;
     }
 
-
 });
+
+let dat = new Date().toISOString().substr(0, 10);
+document.querySelector("#dat").value = dat;
