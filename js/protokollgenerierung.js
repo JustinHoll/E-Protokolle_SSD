@@ -235,5 +235,5 @@ $('#absendenBtn').click(function() {
         }
     });
     //Link muss abgeändert werden
-    window.open('file:///C:/Users/Jonas/Documents/Mein%20zweites%20Projekt/E-Protokolle_SSD/index.html', 'E-Protokoll Schulsanitätsdienst');
+    //window.open('file:///C:/Users/Jonas/Documents/Mein%20zweites%20Projekt/E-Protokolle_SSD/index.html', 'E-Protokoll Schulsanitätsdienst');
 });
