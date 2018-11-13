@@ -12,6 +12,9 @@ die eingetragenen Informationen richtigen Ansprechpartnern.
 Die Single Page App läuft ohnen einen Server im Hintergrund komplett im Browser.
 Lediglich der Mail-Versand bedingt einen Server Zugriff.
 
+Die Anwendung kann als Browser-App in einem Webbrowser normal gestartet werden,
+indem die index.html geöffnet wird.
+
 Verwendete Technologien
 -----------------------
 Folgende Entwicklungswerkzeuge kommen zum Einsatz:
