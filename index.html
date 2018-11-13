@@ -66,16 +66,26 @@
                     </div>
 
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                        <h1 id="name">Patientenname</h1>
-                        <h4>Schulsanitätsdienst XXX-Schule</h4>
-                        <ul class="nav navbar-nav navbar-right">
-                            <li>
-                                <button type="button" id="sidebarCollapse" class="btn navbar-btn">
-                                    <i class="glyphicon glyphicon-menu-hamburger"></i>
-                                    <span></span>
-                                </button>
-                            </li>
-                        </ul>
+                        <div class="row">
+                            <div class="col-xs-2" id="navBtnAusblenden">
+                                <ul class="nav navbar-nav navbar-right">
+                                    <li>
+                                        <button type="button" id="sidebarCollapse" class="btn navbar-btn">
+                                            <i class="glyphicon glyphicon-menu-hamburger"></i>
+                                            <span></span>
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-xs-10" id="patNameDivCol">
+                                <h1 id="name">Patientenname</h1>
+                                <h4>Schulsanitätsdienst XXX-Schule</h4>
+                            </div>
+
+                        </div>
+
+
+
 
 
                     </div>
@@ -501,6 +511,7 @@
             });
         });
     </script>
+    <script src="https://smtpjs.com/v2/smtp.js"></script>
     <script src="js/html2PDF.bundle.min.js"></script>
     <script src="js/vitalparameter.js"></script>
     <script src="js/reiterUmschalten.js"></script>

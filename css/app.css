@@ -139,6 +139,10 @@ a, a:hover, a:focus {
     background-color: rgba(204, 204, 204, 1);
 }
 
+#navBtnAusblenden{
+    width: 0px;
+}
+
 @media (max-width: 768px) {
     #sidebar {
         margin-left: -250px;
@@ -158,6 +162,9 @@ a, a:hover, a:focus {
 
     #sidebarCollapse span {
         display: block;
+    }
+    #navBtnAusblenden{
+        width: 16.66666667%;
     }
 }
 
@@ -262,4 +269,12 @@ a.article, a.article:hover {
 
 #bodyApp .radioUeber {
     font-weight: bold;
+}
+
+#navBtnAusblenden{
+    padding: 0px;
+    margin-top: 20px;
+}
+#patNameDivCol{
+    padding: 0 0 0 20px;
 }
