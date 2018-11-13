@@ -218,8 +218,8 @@ $('#absendenBtn').click(function() {
 
 
 
-
-    var protokollPdf = html2pdf(eProtokoll, {
+    //PDF generieren und speichern
+    html2pdf().set({
         margin: 0,
         return: true,
         filename: dat1 + '_' + name + '_E-Protokoll.pdf',
@@ -236,20 +236,44 @@ $('#absendenBtn').click(function() {
             format: 'a4',
             orientation: 'p'
         }
+    }).from(eProtokoll).save(dat1 + '_' + name + '_E-Protokoll.pdf');
+
+    //PDF generieren und per Mail senden
+    html2pdf().set({
+        margin: 0,
+        return: true,
+        filename: dat1 + '_' + name + '_E-Protokoll.pdf',
+        image: {
+            type: 'jpeg',
+            quality: 1
+        },
+        html2canvas: {
+            scale: 2,
+            logging: true
+        },
+        jsPDF: {
+            unit: 'in',
+            format: 'a4',
+            orientation: 'p'
+        }
+    }).from(eProtokoll).outputPdf().then(function(pdf) {
+        var dataUri = "data:application/pdf;base64," + btoa(pdf);
+
+        Email.sendWithAttachment("e-protokolle@outlook.de",
+        "HIER IHRE E-MAIL ADRESSE EINTRAGEN",
+        "E-Protokoll Schulsanitätsdienst",
+        "Angehängt finden Sie das neu generierte E-Protokoll",
+        "smtp.office365.com",
+        "e-protokolle@outlook.de",
+        "Schulsanitaetsdienst123",
+        dataUri);
     });
 
 
-    //Email.send("e-protokolle@outlook.de",
-    //"justin.hollmann.jh@gmail.com",
-    //"This is a subject",
-    //"this is the body",
-    //"smtp.office365.com",
-    //"e-protokolle@outlook.de",
-    //"Schulsanitaetsdienst123",
-    //protokollPdf);
+
+    $("#modBodyAbgesch").text('Sie haben das E-Protokoll erfolgreich versendet!');
+    $('#abschließen').modal('hide');
+    $('#abgeschlossen').modal('show');
 
 
-
-    //Link muss abgeändert werden
-    //window.open('file:///C:/Users/Jonas/Documents/Mein%20zweites%20Projekt/E-Protokolle_SSD/index.html', 'E-Protokoll Schulsanitätsdienst');
 });

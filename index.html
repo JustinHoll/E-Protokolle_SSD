@@ -26,469 +26,501 @@
 <body id="bodyApp">
 
 
-
-    <div class="wrapper">
-        <!-- Sidebar  -->
-        <nav id="sidebar">
-            <div class="sidebar-header">
-                <img src="img\malteserLogo.png" alt="Malteser" id="logo" />
-                <h3>Schulsanitätsdienst</h3>
-            </div>
-
-            <ul class="list-unstyled components">
-                <li>
-                    <a href="#" class="reiterBtn aktiverBtn" id="einsatzinformationen">Einsatzinformationen</a>
-                    <a href="#" class="reiterBtn" id="patientendaten">Patientendaten</a>
-                    <a href="#" class="reiterBtn" id="unfallhergang">Unfallhergang | Sachlage</a>
-                    <a href="#" class="reiterBtn" id="massnahmen">Maßnahmen</a>
-                    <a href="#" class="reiterBtn" id="vitalparameter">Vitalparameter</a>
-                    <a href="#" class="reiterBtn" id="anamnese">Anamnese</a>
-                    <a href="#" class="reiterBtn" id="verbleib">Verbleib</a>
-                    <a href="#" class="reiterBtn" id="notizen">Notizen</a>
-                    <a id="btnAbschließen" href="#">Einsatz abschließen</a>
-                </li>
-            </ul>
+    <form id="eProtFormId" name="eProtForm">
 
 
-        </nav>
-
-        <!-- Content-Seite -->
-        <div id="content">
-
-            <nav class="navbar navbar-default">
-                <div class="container-fluid">
-
-                    <div class="navbar-header">
-
-                    </div>
-
-                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                        <div class="row">
-                            <div class="col-xs-2" id="navBtnAusblenden">
-                                <ul class="nav navbar-nav navbar-right">
-                                    <li>
-                                        <button type="button" id="sidebarCollapse" class="btn navbar-btn">
-                                            <i class="glyphicon glyphicon-menu-hamburger"></i>
-                                            <span></span>
-                                        </button>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="col-xs-10" id="patNameDivCol">
-                                <h1 id="name">Patientenname</h1>
-                                <h4>Schulsanitätsdienst XXX-Schule</h4>
-                            </div>
-
-                        </div>
-
-
-
-
-
-                    </div>
+        <div class="wrapper">
+            <!-- Sidebar  -->
+            <nav id="sidebar">
+                <div class="sidebar-header">
+                    <img src="img\malteserLogo.png" alt="Malteser" id="logo" />
+                    <h3>Schulsanitätsdienst</h3>
                 </div>
+
+                <ul class="list-unstyled components">
+                    <li>
+                        <a href="#" class="reiterBtn aktiverBtn" id="einsatzinformationen">Einsatzinformationen</a>
+                        <a href="#" class="reiterBtn" id="patientendaten">Patientendaten</a>
+                        <a href="#" class="reiterBtn" id="unfallhergang">Unfallhergang | Sachlage</a>
+                        <a href="#" class="reiterBtn" id="massnahmen">Maßnahmen</a>
+                        <a href="#" class="reiterBtn" id="vitalparameter">Vitalparameter</a>
+                        <a href="#" class="reiterBtn" id="anamnese">Anamnese</a>
+                        <a href="#" class="reiterBtn" id="verbleib">Verbleib</a>
+                        <a href="#" class="reiterBtn" id="notizen">Notizen</a>
+                        <a id="btnAbschließen" href="#">Einsatz abschließen</a>
+                    </li>
+                </ul>
+
+
             </nav>
 
-            <main>
-                <div id="einsatzinformationenDiv" class="reiter">
-                    <div>
-                        <h2>Einsatzinformationen</h2>
-                    </div>
-                    <div class="row">
-                        <!-- Die Abschnitte von 12 in 3 gleich große aufteilen und 4 vergeben -->
-                        <div class="col-md-4">
-                            <!-- 3 Sanitäter in der linken Spalte hinzufügen (Texteingaben)-->
-                            <div class="form-group">
-                                <label for="san1">Sanitäter 1:</label>
-                                <input type="text" class="form-control" id="san1" maxlength="25">
-                            </div>
-                            <div class="form-group">
-                                <label for="san2">Sanitäter 2:</label>
-                                <input type="text" class="form-control" id="san2" maxlength="25">
-                            </div>
-                            <div class="form-group">
-                                <label for="san3">Sanitäter 3:</label>
-                                <input type="text" class="form-control" id="san3" maxlength="25">
-                            </div>
-                        </div>
+            <!-- Content-Seite -->
+            <div id="content">
 
-                        <div class="col-md-4">
-                            <!-- Datum, Uhrzeit, Einsatzort hinzufügen-->
-                            <div class="form-group">
-                                <!-- Datumsformat -->
-                                <label for="dat">Datum:</label>
-                                <input type="date" class="form-control" id="dat">
-                            </div>
-                            <div class="form-group">
-                                <label for="zeit">Uhrzeit:</label>
-                                <input type="time" class="form-control" id="zeit">
-                            </div>
-                            <div class="form-group">
-                                <label for="place">Einsatzort:</label>
-                                <input type="text" class="form-control" id="place" maxlength="25">
-                            </div>
-                        </div>
-                    </div>
+                <nav class="navbar navbar-default">
+                    <div class="container-fluid">
 
-
-
-                </div>
-
-                <div id="patientendatenDiv" class="reiter hidden">
-                    <div>
-                        <h2>Patientendaten</h2>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="form-group">
-                                <label for="vorname">Vorname:</label>
-                                <input type="text" class="form-control nameeingabe" id="vorname" maxlength="22">
-                            </div>
-                            <div class="form-group">
-                                <label for="nachname">Nachname:</label>
-                                <input type="text" class="form-control nameeingabe" id="nachname" maxlength="22">
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="form-group">
-                                <label for="gbd">Geburtsdatum:</label>
-                                <input type="date" class="form-control" id="gbd">
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="form-group">
-                                <label for="kla">Klasse:</label>
-                                <input type="text" class="form-control" id="kla" maxlength="3">
-                            </div>
-                            <div class="form-group">
-                                <label for="kll">KlassenlehrerIn:</label>
-                                <input type="text" class="form-control" id="kll" maxlength="22">
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-                <div id="unfallhergangDiv" class="reiter hidden">
-                    <div>
-                        <h2>Unfallhergang | Sachlage</h2>
-                    </div>
-                    <div class="form-group">
-                        <label for="unfallhergangText">Unfallhergang:</label>
-                        <textarea required rows="4" class="form-control" id="unfallherg" name="unfallhergangText" maxlength="230"></textarea>
-                    </div>
-
-                    <div class="form-group" id="sachL">
-                        <label for="sachlage">Sachlage:</label>
-                        <textarea required rows="4" class="form-control" id="sachl" name="sachlage" maxlength="430"></textarea>
-                    </div>
-
-                    <h4 id="erstB">Erstbefund</h4>
-                    <div class="row">
-                        <div class="col-md-2">
-
-                            <div class="form-group radioGrp">
-                                <p class="radioUeber">Bewusstseinslage</p>
-                                <p class="radioAuswahl">
-                                    <input type="radio" id="orientiert" name="bewusstseinslage" value="orientiert">
-                                    <label style="font-weight:normal" for="orientiert"> orientiert</label></br>
-                                    <input type="radio" id="getrübt" name="bewusstseinslage" value="getrübt">
-                                    <label style="font-weight:normal" for="getrübt"> getrübt</label></br>
-                                    <input type="radio" id="bewusstlos" name="bewusstseinslage" value="bewusstlos">
-                                    <label style="font-weight:normal" for="bewusstlos"> bewusstlos</label></br></p>
-                            </div>
-                        </div>
-
-                        <div class="col-md-2">
-
-                            <div class="form-group radioGrp">
-                                <p class="radioUeber">Kreislauf</p>
-                                <p class="radioAuswahl">
-                                    <input type="radio" id="schock" name="kreislauf" value="schock">
-                                    <label style="font-weight:normal" for="schock"> Schock</label></br>
-                                    <input type="radio" id="kreislaufstillstand" name="kreislauf" value="kreislaufstillstand">
-                                    <label style="font-weight:normal" for="kreislaufstillstand"> Kreislaufstillstand</label></br>
-                                    <input type="radio" id="pulsRegelmäßig" name="kreislauf" value="pulsRegelmäßig">
-                                    <label style="font-weight:normal" for="pulsRegelmäßig"> Puls regelmäßig</label></br>
-                                    <input type="radio" id="pulsUnregelmäßig" name="kreislauf" value="pulsUnregelmäßig">
-                                    <label style="font-weight:normal" for="pulsUnregelmäßig"> Puls unregelmäßig</label></br></p>
-                            </div>
-                        </div>
-
-                        <div class="col-md-2">
-
-                            <div class="form-group radioGrp">
-                                <p class="radioUeber">Atmung</p>
-                                <p class="radioAuswahl">
-                                    <input type="radio" id="spontanFrei" name="atmung" value="spontanFrei">
-                                    <label style="font-weight:normal" for="spontanFrei"> spontan/frei</label></br>
-                                    <input type="radio" id="atemnot" name="atmung" value="atemnot">
-                                    <label style="font-weight:normal" for="atemnot"> Atemnot</label></br>
-                                    <input type="radio" id="hyperventilation" name="atmung" value="hyperventilation">
-                                    <label style="font-weight:normal" for="hyperventilation"> Hyperventilation</label></br>
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="col-md-2">
-
-                            <div class="form-group radioGrp">
-                                <p class="radioUeber">Schmerzen</p>
-                                <p class="radioAuswahl">
-                                    <input type="radio" id="keine" name="schmerzen" value="keine">
-                                    <label style="font-weight:normal" for="keine"> keine</label></br>
-                                    <input type="radio" id="geringe" name="schmerzen" value="geringe">
-                                    <label style="font-weight:normal" for="geringe"> geringe</label></br>
-                                    <input type="radio" id="mittelstarke" name="schmerzen" value="mittelstarke">
-                                    <label style="font-weight:normal" for="mittelstarke"> mittelstarke</label></br>
-                                    <input type="radio" id="starke" name="schmerzen" value="starke">
-                                    <label style="font-weight:normal" for="starke"> starke</label></br></p>
-                            </div>
-                        </div>
-
-                        <div class="col-md-4">
-                            <p class="radioUeber">Lichtreaktion</p>
-
-                            <div class="form-group">
-                                <p class="radioUeber" style="font-weight:bold">links - rechts</p>
-                                <p class="radioAuswahl">
-                                    <input type="radio" id="englinks" name="links" value="eng"> -
-                                    <input type="radio" id="engrechts" name="rechts" value="eng">
-                                    <label style="font-weight:normal"> eng</label></br>
-                                    <input type="radio" id="mittellinks" name="links" value="mittel"> -
-                                    <input type="radio" id="mittelrechts" name="rechts" value="mittel">
-                                    <label style="font-weight:normal"> mittel</label></br>
-                                    <input type="radio" id="weitlinks" name="links" value="weit"> -
-                                    <input type="radio" id="weitrechts" name="rechts" value="weit">
-                                    <label style="font-weight:normal"> weit</label></br>
-                                    <input type="radio" id="entrundetlinks" name="links" value="entrundet"> -
-                                    <input type="radio" id="entrundetrechts" name="rechts" value="entrundet">
-                                    <label style="font-weight:normal"> entrundet</label></br>
-                                    <input type="radio" id="lichtreaktionlinks" name="links" value="lichtreaktion"> -
-                                    <input type="radio" id="lichtreaktionrechts" name="rechts" value="lichtreaktion">
-                                    <label style="font-weight:normal"> Lichtreaktion</label></br></p>
-                            </div>
-
-
+                        <div class="navbar-header">
 
                         </div>
-                    </div>
-                </div>
-                <div id="massnahmenDiv" class="reiter hidden">
-                    <div>
-                        <h2>Maßnahmen</h2>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="checkbox">
-                                <label><input type="checkbox" id="checkMassnPsych">psychologische Betreuung</label>
-                            </div>
-                            <div class="checkbox">
-                                <label><input type="checkbox" id="checkMassnstabSeit">stabile Seitenlage</label>
-                            </div>
-                            <div class="checkbox">
-                                <label><input type="checkbox" id="checkMassnFlach">Flachlagerung</label>
-                            </div>
-                            <div class="checkbox">
-                                <label><input type="checkbox" id="checkMassnOberkoer">Oberkörperhochlagerung</label>
-                            </div>
-                            <div class="checkbox">
-                                <label><input type="checkbox" id="checkMassnSchock">Schocklage</label>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="checkbox">
-                                <label><input type="checkbox" id="checkMassnHWS">HWS-Immobilisation</label>
-                            </div>
-                            <div class="checkbox">
-                                <label><input type="checkbox" id="checkMassnWund">Wundversorgung</label>
-                            </div>
-                            <div class="checkbox">
-                                <label><input type="checkbox" id="checkMassnKuhl">Kühlung</label>
-                            </div>
-                            <div class="checkbox">
-                                <label><input type="checkbox" id="checkMassnWarm">Wärmeerhaltung</label>
-                            </div>
-                            <div class="checkbox">
-                                <label><input type="checkbox" id="checkMassnFrak">Fraktur-Immobilisation</label>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="comment" id="sofMas">Sonstige Maßnahmen:</label>
-                        <textarea class="form-control" rows="5" id="masnahmen" maxlength="230"></textarea>
-                    </div>
-                </div>
-                <div id="vitalparameterDiv" class="reiter hidden">
-                    <div>
-                        <h2>Vitalparameter</h2>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-4">
 
-                            <ul class="list-group" id="RRListe">
-                                <li class="list-group-item list-group-item-success">Blutdruck</li>
-                            </ul>
-
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                             <div class="row">
-
-                                <div class="col-xs-6">
-                                    <div class="form-group">
-                                        <label for="systRR">RR systolisch:</label>
-                                        <input class="form-control" min="0" max="300" type="number" name="systRR" id="systRR"></input>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="uhrRR">Uhrzeit:</label>
-                                        <input class="form-control" type="time" name="uhrRR" id="uhrRR"></input>
-                                    </div>
-                                    <button class="btn" id="hinzu1">hinzufügen</button>
-
+                                <div class="col-xs-2" id="navBtnAusblenden">
+                                    <ul class="nav navbar-nav navbar-right">
+                                        <li>
+                                            <button type="button" id="sidebarCollapse" class="btn navbar-btn">
+                                                <i class="glyphicon glyphicon-menu-hamburger"></i>
+                                                <span></span>
+                                            </button>
+                                        </li>
+                                    </ul>
                                 </div>
-                                <div class="col-xs-6">
-                                    <div class="form-group">
-                                        <label for="systRR">diastolisch:</label>
-                                        <input class="form-control" min="0" max="200" type="number" name="diastRR" id="diastRR"></input>
+                                <div class="col-xs-10" id="patNameDivCol">
+                                    <h1 id="name">Patientenname</h1>
+                                    <h4>Schulsanitätsdienst XXX-Schule</h4>
+                                </div>
+
+                            </div>
+
+
+
+
+
+                        </div>
+                    </div>
+                </nav>
+
+                <main>
+                    <div id="einsatzinformationenDiv" class="reiter">
+                        <div>
+                            <h2>Einsatzinformationen</h2>
+                        </div>
+                        <div class="row">
+                            <!-- Die Abschnitte von 12 in 3 gleich große aufteilen und 4 vergeben -->
+                            <div class="col-md-4">
+                                <!-- 3 Sanitäter in der linken Spalte hinzufügen (Texteingaben)-->
+                                <div class="form-group">
+                                    <label for="san1">Sanitäter 1:</label>
+                                    <input type="text" class="form-control" id="san1" maxlength="25">
+                                </div>
+                                <div class="form-group">
+                                    <label for="san2">Sanitäter 2:</label>
+                                    <input type="text" class="form-control" id="san2" maxlength="25">
+                                </div>
+                                <div class="form-group">
+                                    <label for="san3">Sanitäter 3:</label>
+                                    <input type="text" class="form-control" id="san3" maxlength="25">
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <!-- Datum, Uhrzeit, Einsatzort hinzufügen-->
+                                <div class="form-group">
+                                    <!-- Datumsformat -->
+                                    <label for="dat">Datum:</label>
+                                    <input type="date" class="form-control" id="dat">
+                                </div>
+                                <div class="form-group">
+                                    <label for="zeit">Uhrzeit:</label>
+                                    <input type="time" class="form-control" id="zeit">
+                                </div>
+                                <div class="form-group">
+                                    <label for="place">Einsatzort:</label>
+                                    <input type="text" class="form-control" id="place" maxlength="25">
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+                    <div id="patientendatenDiv" class="reiter hidden">
+                        <div>
+                            <h2>Patientendaten</h2>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="vorname">Vorname:</label>
+                                    <input type="text" class="form-control nameeingabe" id="vorname" maxlength="22">
+                                </div>
+                                <div class="form-group">
+                                    <label for="nachname">Nachname:</label>
+                                    <input type="text" class="form-control nameeingabe" id="nachname" maxlength="22">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="gbd">Geburtsdatum:</label>
+                                    <input type="date" class="form-control" id="gbd">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="kla">Klasse:</label>
+                                    <input type="text" class="form-control" id="kla" maxlength="3">
+                                </div>
+                                <div class="form-group">
+                                    <label for="kll">KlassenlehrerIn:</label>
+                                    <input type="text" class="form-control" id="kll" maxlength="22">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div id="unfallhergangDiv" class="reiter hidden">
+                        <div>
+                            <h2>Unfallhergang | Sachlage</h2>
+                        </div>
+                        <div class="form-group">
+                            <label for="unfallhergangText">Unfallhergang:</label>
+                            <textarea required rows="4" class="form-control" id="unfallherg" name="unfallhergangText" maxlength="230"></textarea>
+                        </div>
+
+                        <div class="form-group" id="sachL">
+                            <label for="sachlage">Sachlage:</label>
+                            <textarea required rows="4" class="form-control" id="sachl" name="sachlage" maxlength="430"></textarea>
+                        </div>
+
+                        <h4 id="erstB">Erstbefund</h4>
+                        <div class="row">
+                            <div class="col-md-2">
+
+                                <div class="form-group radioGrp">
+                                    <p class="radioUeber">Bewusstseinslage</p>
+                                    <p class="radioAuswahl">
+                                        <input type="radio" id="orientiert" name="bewusstseinslage" value="orientiert">
+                                        <label style="font-weight:normal" for="orientiert"> orientiert</label></br>
+                                        <input type="radio" id="getrübt" name="bewusstseinslage" value="getrübt">
+                                        <label style="font-weight:normal" for="getrübt"> getrübt</label></br>
+                                        <input type="radio" id="bewusstlos" name="bewusstseinslage" value="bewusstlos">
+                                        <label style="font-weight:normal" for="bewusstlos"> bewusstlos</label></br></p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-2">
+
+                                <div class="form-group radioGrp">
+                                    <p class="radioUeber">Kreislauf</p>
+                                    <p class="radioAuswahl">
+                                        <input type="radio" id="schock" name="kreislauf" value="schock">
+                                        <label style="font-weight:normal" for="schock"> Schock</label></br>
+                                        <input type="radio" id="kreislaufstillstand" name="kreislauf" value="kreislaufstillstand">
+                                        <label style="font-weight:normal" for="kreislaufstillstand"> Kreislaufstillstand</label></br>
+                                        <input type="radio" id="pulsRegelmäßig" name="kreislauf" value="pulsRegelmäßig">
+                                        <label style="font-weight:normal" for="pulsRegelmäßig"> Puls regelmäßig</label></br>
+                                        <input type="radio" id="pulsUnregelmäßig" name="kreislauf" value="pulsUnregelmäßig">
+                                        <label style="font-weight:normal" for="pulsUnregelmäßig"> Puls unregelmäßig</label></br></p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-2">
+
+                                <div class="form-group radioGrp">
+                                    <p class="radioUeber">Atmung</p>
+                                    <p class="radioAuswahl">
+                                        <input type="radio" id="spontanFrei" name="atmung" value="spontanFrei">
+                                        <label style="font-weight:normal" for="spontanFrei"> spontan/frei</label></br>
+                                        <input type="radio" id="atemnot" name="atmung" value="atemnot">
+                                        <label style="font-weight:normal" for="atemnot"> Atemnot</label></br>
+                                        <input type="radio" id="hyperventilation" name="atmung" value="hyperventilation">
+                                        <label style="font-weight:normal" for="hyperventilation"> Hyperventilation</label></br>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-2">
+
+                                <div class="form-group radioGrp">
+                                    <p class="radioUeber">Schmerzen</p>
+                                    <p class="radioAuswahl">
+                                        <input type="radio" id="keine" name="schmerzen" value="keine">
+                                        <label style="font-weight:normal" for="keine"> keine</label></br>
+                                        <input type="radio" id="geringe" name="schmerzen" value="geringe">
+                                        <label style="font-weight:normal" for="geringe"> geringe</label></br>
+                                        <input type="radio" id="mittelstarke" name="schmerzen" value="mittelstarke">
+                                        <label style="font-weight:normal" for="mittelstarke"> mittelstarke</label></br>
+                                        <input type="radio" id="starke" name="schmerzen" value="starke">
+                                        <label style="font-weight:normal" for="starke"> starke</label></br></p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <p class="radioUeber">Lichtreaktion</p>
+
+                                <div class="form-group">
+                                    <p class="radioUeber" style="font-weight:bold">links - rechts</p>
+                                    <p class="radioAuswahl">
+                                        <input type="radio" id="englinks" name="links" value="eng"> -
+                                        <input type="radio" id="engrechts" name="rechts" value="eng">
+                                        <label style="font-weight:normal"> eng</label></br>
+                                        <input type="radio" id="mittellinks" name="links" value="mittel"> -
+                                        <input type="radio" id="mittelrechts" name="rechts" value="mittel">
+                                        <label style="font-weight:normal"> mittel</label></br>
+                                        <input type="radio" id="weitlinks" name="links" value="weit"> -
+                                        <input type="radio" id="weitrechts" name="rechts" value="weit">
+                                        <label style="font-weight:normal"> weit</label></br>
+                                        <input type="radio" id="entrundetlinks" name="links" value="entrundet"> -
+                                        <input type="radio" id="entrundetrechts" name="rechts" value="entrundet">
+                                        <label style="font-weight:normal"> entrundet</label></br>
+                                        <input type="radio" id="lichtreaktionlinks" name="links" value="lichtreaktion"> -
+                                        <input type="radio" id="lichtreaktionrechts" name="rechts" value="lichtreaktion">
+                                        <label style="font-weight:normal"> Lichtreaktion</label></br></p>
+                                </div>
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div id="massnahmenDiv" class="reiter hidden">
+                        <div>
+                            <h2>Maßnahmen</h2>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="checkbox">
+                                    <label><input type="checkbox" id="checkMassnPsych">psychologische Betreuung</label>
+                                </div>
+                                <div class="checkbox">
+                                    <label><input type="checkbox" id="checkMassnstabSeit">stabile Seitenlage</label>
+                                </div>
+                                <div class="checkbox">
+                                    <label><input type="checkbox" id="checkMassnFlach">Flachlagerung</label>
+                                </div>
+                                <div class="checkbox">
+                                    <label><input type="checkbox" id="checkMassnOberkoer">Oberkörperhochlagerung</label>
+                                </div>
+                                <div class="checkbox">
+                                    <label><input type="checkbox" id="checkMassnSchock">Schocklage</label>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="checkbox">
+                                    <label><input type="checkbox" id="checkMassnHWS">HWS-Immobilisation</label>
+                                </div>
+                                <div class="checkbox">
+                                    <label><input type="checkbox" id="checkMassnWund">Wundversorgung</label>
+                                </div>
+                                <div class="checkbox">
+                                    <label><input type="checkbox" id="checkMassnKuhl">Kühlung</label>
+                                </div>
+                                <div class="checkbox">
+                                    <label><input type="checkbox" id="checkMassnWarm">Wärmeerhaltung</label>
+                                </div>
+                                <div class="checkbox">
+                                    <label><input type="checkbox" id="checkMassnFrak">Fraktur-Immobilisation</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="comment" id="sofMas">Sonstige Maßnahmen:</label>
+                            <textarea class="form-control" rows="5" id="masnahmen" maxlength="230"></textarea>
+                        </div>
+                    </div>
+                    <div id="vitalparameterDiv" class="reiter hidden">
+                        <div>
+                            <h2>Vitalparameter</h2>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+
+                                <ul class="list-group" id="RRListe">
+                                    <li class="list-group-item list-group-item-success">Blutdruck</li>
+                                </ul>
+
+                                <div class="row">
+
+                                    <div class="col-xs-6">
+                                        <div class="form-group">
+                                            <label for="systRR">RR systolisch:</label>
+                                            <input class="form-control" min="0" max="300" type="number" name="systRR" id="systRR"></input>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="uhrRR">Uhrzeit:</label>
+                                            <input class="form-control" type="time" name="uhrRR" id="uhrRR"></input>
+                                        </div>
+                                        <button class="btn" id="hinzu1">hinzufügen</button>
+
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <div class="form-group">
+                                            <label for="systRR">diastolisch:</label>
+                                            <input class="form-control" min="0" max="200" type="number" name="diastRR" id="diastRR"></input>
+                                        </div>
                                     </div>
                                 </div>
+
+
+                            </div>
+
+                            <div class="col-md-4">
+
+                                <ul class="list-group" id="HFListe">
+                                    <li class="list-group-item list-group-item-success">Puls</li>
+                                </ul>
+
+                                <div class="row">
+
+                                    <div class="col-xs-6">
+                                        <div class="form-group">
+                                            <label for="hf">HF:</label>
+                                            <input class="form-control" min="0" max="400" type="number" name="hf" id="hf"></input>
+                                        </div>
+
+                                        <button class="btn" id="hinzu2">hinzufügen</button>
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <div class="form-group">
+                                            <label for="uhrHF">Uhrzeit:</label>
+                                            <input class="form-control" type="time" name="uhrHF" id="uhrHF"></input>
+                                        </div>
+                                    </div>
+                                </div>
+
                             </div>
 
 
                         </div>
-
-                        <div class="col-md-4">
-
-                            <ul class="list-group" id="HFListe">
-                                <li class="list-group-item list-group-item-success">Puls</li>
-                            </ul>
-
-                            <div class="row">
-
-                                <div class="col-xs-6">
-                                    <div class="form-group">
-                                        <label for="hf">HF:</label>
-                                        <input class="form-control" min="0" max="400" type="number" name="hf" id="hf"></input>
+                    </div>
+                    <div id="anamneseDiv" class="reiter hidden">
+                        <div>
+                            <h2>Anamnese</h2>
+                        </div>
+                        <!-- Kommentarfeld, 9 breit -->
+                        <div class="row">
+                            <div class="col-md-9">
+                                <div class="form-group">
+                                    <div label for="text">Symptome, Allergien, Medikamente, Präerkrankungen, Letzte Mahlzeit, Ereignis, Risikofaktoren, Schwangerschaft:</label>
                                     </div>
-
-                                    <button class="btn" id="hinzu2">hinzufügen</button>
-                                </div>
-                                <div class="col-xs-6">
-                                    <div class="form-group">
-                                        <label for="uhrHF">Uhrzeit:</label>
-                                        <input class="form-control" type="time" name="uhrHF" id="uhrHF"></input>
-                                    </div>
+                                    <textarea class="form-control" rows="7" id="text" maxlength="158"></textarea>
                                 </div>
                             </div>
-
                         </div>
+                    </div>
+                    <div id="verbleibDiv" class="reiter hidden">
+                        <div>
+                            <h2>Verbleib des Patienten</h2>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-2">
+                                <div class="form-group">
+                                    <label for="zeit">Uhrzeit:</label>
+                                    <input type="time" class="form-control" id="uhrzeit">
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="form-group">
+                                    <label for="pers">Übergeben an:</label>
+                                    <input type="text" class="form-control" id="pers" maxlength="40">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label id="empf" for="empf">Empfehlung:</label>
+
+                            <!-- RadioButtons einfügen -->
+
+                            <div class="radio">
+                                <label><input type="radio" name="empf">keine Empfehlung ausgesprochen</label>
+                            </div>
+                            <div class="radio">
+                                <label><input type="radio" name="empf">bei Verschlechterung des persönlichen Zustandes einen Arzt/ein Krankenhaus aufsuchen</label>
+                            </div>
+                            <div class="radio">
+                                <label><input type="radio" name="empf">unverzüglich einen Arzt/ein Krankenhaus zur weiteren Behandlung aufsuchen</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="erg">Ergebnis:</label>
+
+                            <div class="radio" id="erg">
+                                <label><input type="radio" name="zustand" value="Zustand verbessert">Zustand verbessert</label>
+                            </div>
+                            <div class="radio">
+                                <label><input type="radio" name="zustand" value="Zustand unverändert">Zustand unverändert</label>
+                            </div>
+                            <div class="radio">
+                                <label><input type="radio" name="zustand" value="Zustand verschlechtert">Zustand verschlechtert</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="notizenDiv" class="reiter hidden">
+                        <div>
+                            <h2>Notizen</h2>
+                        </div>
+                        <div class="form-group">
+                            <label for="comment"></label>
+                            <textarea class="form-control" rows="5" id="notizenfeld" maxlength="50"></textarea>
+                        </div>
+                    </div>
+                </main>
+
+                <!-- Modal -->
+                <div class="modal fade" id="abschließen" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <div class="row">
+                                    <div class="col-xs-10">
+                                        <h5 class="modal-title" id="ModalLabel">Einsatz abschließen</h5>
+                                    </div>
+                                    <div class="col-xs-2">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                </div>
 
 
+                            </div>
+                            <div class="modal-body">
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-outline-secondary" data-dismiss="modal" id="zurück">Zurück zur Bearbeitung</button>
+                                <button type="button" class="btn btn-success" id="absendenBtn">Jetzt absenden</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div id="anamneseDiv" class="reiter hidden">
-                    <div>
-                        <h2>Anamnese</h2>
-                    </div>
-                    <!-- Kommentarfeld, 9 breit -->
-                    <div class="row">
-                        <div class="col-md-9">
-                            <div class="form-group">
-                                <div label for="text">Symptome, Allergien, Medikamente, Präerkrankungen, Letzte Mahlzeit, Ereignis, Risikofaktoren, Schwangerschaft:</label>
+
+                <!-- Modal -->
+                <div class="modal fade" id="abgeschlossen" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <div class="row">
+                                    <div class="col-xs-10">
+                                        <h5 class="modal-title" id="ModalLabel">Protokoll versendet</h5>
+                                    </div>
+                                    <div class="col-xs-2">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
                                 </div>
-                                <textarea class="form-control" rows="7" id="text" maxlength="158"></textarea>
+
+
+                            </div>
+                            <div class="modal-body" id="modBodyAbgesch">
+                                
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-outline-secondary" data-dismiss="modal" id="zurück">schließen</button>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div id="verbleibDiv" class="reiter hidden">
-                    <div>
-                        <h2>Verbleib des Patienten</h2>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-2">
-                            <div class="form-group">
-                                <label for="zeit">Uhrzeit:</label>
-                                <input type="time" class="form-control" id="uhrzeit">
-                            </div>
-                        </div>
-                        <div class="col-md-2">
-                            <div class="form-group">
-                                <label for="pers">Übergeben an:</label>
-                                <input type="text" class="form-control" id="pers" maxlength="40">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label id="empf" for="empf">Empfehlung:</label>
 
-                        <!-- RadioButtons einfügen -->
-
-                        <div class="radio">
-                            <label><input type="radio" name="empf">keine Empfehlung ausgesprochen</label>
-                        </div>
-                        <div class="radio">
-                            <label><input type="radio" name="empf">bei Verschlechterung des persönlichen Zustandes einen Arzt/ein Krankenhaus aufsuchen</label>
-                        </div>
-                        <div class="radio">
-                            <label><input type="radio" name="empf">unverzüglich einen Arzt/ein Krankenhaus zur weiteren Behandlung aufsuchen</label>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="erg">Ergebnis:</label>
-
-                        <div class="radio" id="erg">
-                            <label><input type="radio" name="zustand" value="Zustand verbessert">Zustand verbessert</label>
-                        </div>
-                        <div class="radio">
-                            <label><input type="radio" name="zustand" value="Zustand unverändert">Zustand unverändert</label>
-                        </div>
-                        <div class="radio">
-                            <label><input type="radio" name="zustand" value="Zustand verschlechtert">Zustand verschlechtert</label>
-                        </div>
-                    </div>
-                </div>
-
-                <div id="notizenDiv" class="reiter hidden">
-                    <div>
-                        <h2>Notizen</h2>
-                    </div>
-                    <div class="form-group">
-                        <label for="comment"></label>
-                        <textarea class="form-control" rows="5" id="notizenfeld" maxlength="50"></textarea>
-                    </div>
-                </div>
-            </main>
-
-            <!-- Modal -->
-            <div class="modal fade" id="abschließen" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <div class="row">
-                                <div class="col-xs-10">
-                                    <h5 class="modal-title" id="ModalLabel">Einsatz abschließen</h5>
-                                </div>
-                                <div class="col-xs-2">
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                </div>
-                            </div>
-
-
-                        </div>
-                        <div class="modal-body">
-
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-outline-secondary" data-dismiss="modal" id="zurück">Zurück zur Bearbeitung</button>
-                            <button type="button" class="btn btn-success" id="absendenBtn">Jetzt absenden</button>
-                        </div>
-                    </div>
-                </div>
             </div>
-
         </div>
-    </div>
+
+    </form>
     <div id="roterBalkenUnten">
 
     </div>
