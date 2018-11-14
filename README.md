@@ -9,11 +9,13 @@ der Malteser, die bisher analog auf ausgedruckten Formularen eingetragenen
 Informationen, digital abzubilden. Durch den direkten Mail-Versand gelangen
 die eingetragenen Informationen richtigen Ansprechpartnern.
 
-Die Single Page App läuft ohnen einen Server im Hintergrund komplett im Browser.
+Die Single Page App läuft ohne einen Server im Hintergrund komplett im Browser.
 Lediglich der Mail-Versand bedingt einen Server Zugriff.
 
 Die Anwendung kann als Browser-App in einem Webbrowser normal gestartet werden,
 indem die index.html geöffnet wird.
+
+Um die E-Protkolle zugesendet zu bekommen, muss in der Datei "js/protokollgenerierung.js" in der Zeile 263 der String 'HIER IHRE E-MAIL ADRESSE EINTRAGEN' durch die E-Mail Adresse ersetzt werden.
 
 Verwendete Technologien
 -----------------------
